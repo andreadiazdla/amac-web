@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de Recepcionista | AMAC</title>
+    <meta name="description" content="Solicitudes que recibió la vacante de Recepcionista.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <!-- logo: pequeño en celular, completo desde tablet -->
+            <a class="logo" href="index.html">
+                <picture>
+                    <source media="(min-width: 48em)" srcset="img/logo-amac.png">
+                    <img src="img/logo-movil.png" width="77" height="39" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+                </picture>
+            </a>
+
+            <!-- menú hamburguesa para celular y tablet -->
+            <input class="menu-casilla" type="checkbox" id="menuAbrir">
+            <label class="menu-boton" for="menuAbrir">
+                <span class="solo-lectores">Abrir menú</span>
+                <span aria-hidden="true">☰</span>
+            </label>
+
+            <!-- navegación general -->
+            <nav class="nav-principal" aria-label="Navegación principal">
+                <ul class="nav-principal-lista">
+                    <li><a class="nav-principal-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="nav-principal-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="nav-principal-enlace" href="empresa-vacantes.html" aria-current="page">Empresas</a></li>
+                    <li><a class="nav-principal-enlace" href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+
+            <!-- botón de llamar a AMAC -->
+            <a class="boton-contacto" href="tel:+528100000000" aria-label="Contáctanos por teléfono">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+                <span class="contacto-texto">Contáctanos</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <div class="titulo-solicitudes">
+                <h1>Solicitudes de la vacante Recepcionista</h1>
+                <details class="desplegable">
+                    <summary class="desplegable-boton">
+                        <span class="solo-lectores">Elegir vacante</span>
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </summary>
+                    <ul class="desplegable-lista">
+                        <li><a href="solicitudes-recibidas.html">Todas las vacantes</a></li>
+                        <li><a href="solicitudes-vacante.html" aria-current="page">Recepcionista</a></li>
+                    </ul>
+                </details>
+            </div>
+
+            <ul class="lista-tarjetas" aria-label="Solicitudes de Recepcionista">
+                <li>
+                    <article class="tarjeta tarjeta-solicitud">
+                        <input class="decision-radio decision-aceptar" type="radio" name="decisionMariaElenaGarza" id="aceptarMariaElenaGarza">
+                        <input class="decision-radio decision-rechazar" type="radio" name="decisionMariaElenaGarza" id="rechazarMariaElenaGarza">
+                        <h2>Recepcionista</h2>
+                        <p class="etiqueta-estatus estatus-pendiente estatus-inicial"><span class="solo-lectores">Estado: </span>Pendiente</p>
+                        <p class="etiqueta-estatus estatus-aceptado estatus-si-acepta"><span class="solo-lectores">Estado: </span>Aceptado</p>
+                        <p class="etiqueta-estatus estatus-rechazado estatus-si-rechaza"><span class="solo-lectores">Estado: </span>Rechazado</p>
+                        <div class="tarjeta-solicitud-datos">
+                            <p><strong>Nombre del postulante:</strong> María Elena Garza</p>
+                            <p><strong>Edad:</strong> 67 años</p>
+                            <p><strong>Lugar de residencia:</strong> Monterrey, Nuevo León</p>
+                            <p class="fecha-decision"><strong>Fecha de cambio:</strong> Hoy</p>
+                        </div>
+                        <button class="boton boton-primario boton-perfil" type="button">Ver perfil<span class="solo-lectores"> de María Elena Garza</span></button>
+                        <div class="tarjeta-solicitud-experiencia">
+                            <h3>Experiencia:</h3>
+                            <p><strong>Recepcionista - Hotel Ancira (2005 - 2018)</strong></p>
+                            <p>Atención a huéspedes, reservaciones y manejo del conmutador.</p>
+                        </div>
+                        <div class="tarjeta-solicitud-decision">
+                            <label class="boton boton-primario boton-aceptar" for="aceptarMariaElenaGarza">Aceptar<span class="solo-lectores"> a María Elena Garza</span></label>
+                            <label class="boton boton-acento boton-rechazar" for="rechazarMariaElenaGarza">Rechazar<span class="solo-lectores"> a María Elena Garza</span></label>
+                        </div>
+                        <p class="aviso aviso-info aviso-decision aviso-si-acepta">Aceptaste a María Elena Garza. Ya puede ver tu respuesta en sus solicitudes.</p>
+                        <p class="aviso aviso-decision aviso-si-rechaza">Rechazaste la solicitud de María Elena Garza.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta tarjeta-solicitud">
+                        <h2>Recepcionista</h2>
+                        <p class="etiqueta-estatus estatus-rechazado"><span class="solo-lectores">Estado: </span>Rechazado</p>
+                        <div class="tarjeta-solicitud-datos">
+                            <p><strong>Nombre del postulante:</strong> José Luis Treviño</p>
+                            <p><strong>Edad:</strong> 71 años</p>
+                            <p><strong>Lugar de residencia:</strong> Guadalupe, Nuevo León</p>
+                            <p><strong>Fecha de cambio:</strong> 22/10/2026</p>
+                        </div>
+                        <button class="boton boton-primario boton-perfil" type="button">Ver perfil<span class="solo-lectores"> de José Luis Treviño</span></button>
+                        <div class="tarjeta-solicitud-experiencia">
+                            <h3>Experiencia:</h3>
+                            <p><strong>Encargado de tienda - Abarrotes Treviño (1990 - 2020)</strong></p>
+                            <p>Administración del negocio familiar, inventarios y atención a clientes.</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="tarjeta tarjeta-solicitud">
+                        <h2>Recepcionista</h2>
+                        <p class="etiqueta-estatus estatus-aceptado"><span class="solo-lectores">Estado: </span>Aceptado</p>
+                        <div class="tarjeta-solicitud-datos">
+                            <p><strong>Nombre del postulante:</strong> Carmen López</p>
+                            <p><strong>Edad:</strong> 66 años</p>
+                            <p><strong>Lugar de residencia:</strong> Monterrey, Nuevo León</p>
+                            <p><strong>Fecha de cambio:</strong> 18/10/2026</p>
+                        </div>
+                        <button class="boton boton-primario boton-perfil" type="button">Ver perfil<span class="solo-lectores"> de Carmen López</span></button>
+                        <div class="tarjeta-solicitud-experiencia">
+                            <h3>Experiencia:</h3>
+                            <p><strong>Auxiliar contable - Despacho Garza (1995 - 2020)</strong></p>
+                            <p>Registro de facturas, conciliaciones bancarias y archivo de documentos.</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+            <section aria-labelledby="pieAmac">
+                <h2 class="pie-titulo" id="pieAmac">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-labelledby="pieSecciones">
+                <h2 class="pie-titulo" id="pieSecciones">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="pie-enlace" href="registro-candidato.html">Crear cuenta de candidato</a></li>
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Panel de empresas</a></li>
+                </ul>
+            </nav>
+
+            <section aria-labelledby="pieAyuda">
+                <h2 class="pie-titulo" id="pieAyuda">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: <a class="pie-enlace" href="tel:+528100000000">81 0000 0000</a></p>
+                <a class="boton boton-acento" href="tel:+528100000000">Llamar a AMAC</a>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
