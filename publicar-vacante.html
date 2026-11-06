@@ -54,3 +54,109 @@
                     <p>Todos los datos requeridos son obligatorios para la publicación de la vacante.</p>
                 </div>
             </div>
+
+            <form class="formulario" action="empresa-vacantes.html" method="get">
+                <section class="tarjeta tarjeta-formulario" >
+                    <h2 >Datos de la vacante</h2>
+                    <div class="campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Ej. Recepcionista" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sueldo">Sueldo</label>
+                        <input id="sueldo" name="sueldo" type="number" placeholder="Ej. 8000" min="1" required>
+                    </div>
+                    <div class="campo">
+                        <label for="ubicacion">Ubicación de la vacante</label>
+                        <input id="ubicacion" name="ubicacion" type="text" placeholder="Ej. Monterrey, Nuevo León" required>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                        <input id="categoria" name="categoria" type="text" placeholder="Ej. Atención al cliente" required>
+                    </div>
+                    <div class="campo">
+                        <label for="horarioEntrada">Horario entrada</label>
+                        <input id="horarioEntrada" name="horarioEntrada" type="time" required>
+                    </div>
+                    <div class="campo">
+                        <label for="horarioSalida">Horario salida</label>
+                        <input id="horarioSalida" name="horarioSalida" type="time" required>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe las actividades del puesto" required></textarea>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="requisitos">Requisitos</label>
+                        <textarea id="requisitos" name="requisitos" rows="2" placeholder="Ej. Secundaria terminada" required></textarea>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="prestaciones">Prestaciones</label>
+                        <textarea id="prestaciones" name="prestaciones" rows="2" placeholder="Ej. Prestaciones de ley" required></textarea>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="tarjeta tarjeta-formulario" >
+                    <h2 >Solicitudes</h2>
+                    <fieldset class="opciones">
+                        <legend>Medio de postulación</legend>
+                        <div class="opciones-lista">
+                        <label class="opcion"><input type="radio" name="medio" value="plataforma" id="medioPlataforma" required> Plataforma</label>
+                        <label class="opcion"><input type="radio" name="medio" value="telefono" id="medioTelefono"> Teléfono</label>
+                        </div>
+                    </fieldset>
+                    <!-- este campo aparece solo si eligen "Teléfono" (reminder hay que especificar en CSS) -->
+                    <div class="campo campo-telefono">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Ej. 81 1234 5678">
+                    </div>
+                </section>
+
+                <section class="tarjeta tarjeta-formulario">
+                    <h2>Estado de la vacante</h2>
+                    <fieldset class="opciones">
+                        <div class="opciones-lista">
+                        <label class="opcion"><input type="radio" name="estado" value="activa" required> Activa</label>
+                        <label class="opcion"><input type="radio" name="estado" value="pausada"> Pausada</label>
+                        <label class="opcion"><input type="radio" name="estado" value="cerrada"> Cerrada</label>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <div class="formulario-boton">
+                    <button class="boton boton-primario" type="submit">Publicar vacante</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+<footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+            <section >
+                <h2 class="pie-titulo" >AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-label="Secciones del pie de página">
+                 <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="pie-enlace" href="registro-candidato.html">Crear cuenta de candidato</a></li>
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Panel de empresas</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="pie-titulo" >¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: <a class="pie-enlace" href="tel:+528100000000">81 0000 0000</a></p>
+                <a class="boton boton-acento" href="tel:+528100000000">Llamar a AMAC</a>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+</body>
+</html>

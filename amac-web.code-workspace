@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "amac-web",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../../amac-web/amac-empresa/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "amac-web",
+		"liveServer.settings.port": 5501
+	}
+}
