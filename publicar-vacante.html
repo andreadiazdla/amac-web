@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la vacante | AMAC</title>
+    <meta name="description" content="Publica o edita una vacante de tu empresa en AMAC.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <!-- logo: pequeño en celular, completo desde tablet -->
+            <a class="logo" href="index.html">
+                <picture>
+                    <source media="(min-width: 48em)" srcset="img/logo-amac.png">
+                    <img src="img/logo-movil.png" width="77" height="39" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+                </picture>
+            </a>
+
+            <!-- menú hamburguesa para celular y tablet -->
+            <input class="menu-casilla" type="checkbox" id="menuAbrir">
+            <label class="menu-boton" for="menuAbrir">
+                <span class="solo-lectores">Abrir menú</span>
+                <span aria-hidden="true">☰</span>
+            </label>
+
+            <!-- navegación general -->
+            <nav class="nav-principal" aria-label="Navegación principal">
+                <ul class="nav-principal-lista">
+                    <li><a class="nav-principal-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="nav-principal-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="nav-principal-enlace" href="empresa-vacantes.html" aria-current="page">Empresas</a></li>
+                    <li><a class="nav-principal-enlace" href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+
+            <!-- botón de llamar a AMAC -->
+            <a class="boton-contacto" href="tel:+528100000000" aria-label="Contáctanos por teléfono">
+                
+                <span class="contacto-texto">Contáctanos</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <div class="titulo-pagina">
+                <div>
+                    <h1>Información vacante</h1>
+                    <p>Todos los datos requeridos son obligatorios para la publicación de la vacante.</p>
+                </div>
+            </div>
