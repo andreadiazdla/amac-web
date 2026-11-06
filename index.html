@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar empleos | AMAC</title>
+    <meta name="description" content="Vacantes de empleo para personas mayores en AMAC.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor encabezado-contenido">
+            <!--! imagen de logo iría aquí-->
+
+            <!-- navegación general -->
+            <nav class="nav-principal" aria-label="Navegación principal">
+                <ul class="nav-principal-lista">
+                    <li><a class="nav-principal-enlace" href="index.html" aria-current="page">Buscar empleos</a></li>
+                    <li><a class="nav-principal-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="nav-principal-enlace" href="empresa-vacantes.html">Empresas</a></li>
+                    <li><a class="nav-principal-enlace" href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+
+            <!-- boton de llamar a AMAC -->
+            <a class="boton boton-acento" href="tel:+528100000000">
+                <!--! TBA: icono-->
+                Contáctanos
+                <span class="solo-lectores"> por teléfono </span> <!-- solo-lectores es para lectores d pantalla -->
+            </a>
+        </div>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <h1 class="solo-lectores">Buscar empleos</h1>
+
+            <form class="buscador" action="index.html" method="get" role="search" aria-label="Buscar Vacantes">
+                <div class="buscador-grupo">
+                    <label class="buscador-etiqueta" for="buscar">Buscar por palabra clave</label>
+                    <div class="buscador-caja">
+                        <input class="buscador-campo" type="search" id="buscar" name="q" placeholder="Ej. cajero">
+                        <button class="boton boton-primario" type="submit">Buscar</button>
+                    </div>
+                </div>
+                <!--! TBA: FILTROS (fml)-->
+            </form>
+
+
+            <section aria-label="titulo-vacantes">
+                <h2 class="solo-lectores" id="titulo-vacantes">Vacantes disponibles</h2>
+
+                <ul class="lista-vacantes">
+                    <li>
+                        <article class="tarjeta tarjeta-vacante">
+                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+
+                            <ul class="tarjeta-vacante-datos">
+                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
+                                
+                                <li class="dato">
+                                    <!--! TBA: icono de ubicacion-->
+                                    <span>
+                                        <span class="solo-lectores"> Ubicación: </span>
+                                    Monterrey, Nuevo León
+                                    </span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato">
+                                    <span class="etiqueta">Tiempo Completo</span>
+                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
+                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
+                            </ul>
+                            <div class="tarjeta-vacante-acciones">
+                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
+                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="tarjeta tarjeta-vacante">
+                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+
+                            <ul class="tarjeta-vacante-datos">
+                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
+                                
+                                <li class="dato">
+                                    <!--! TBA: icono de ubicacion-->
+                                    <span>
+                                        <span class="solo-lectores"> Ubicación: </span>
+                                    Monterrey, Nuevo León
+                                    </span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato">
+                                    <span class="etiqueta">Tiempo Completo</span>
+                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
+                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
+                            </ul>
+                            <div class="tarjeta-vacante-acciones">
+                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
+                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="tarjeta tarjeta-vacante">
+                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+
+                            <ul class="tarjeta-vacante-datos">
+                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
+                                
+                                <li class="dato">
+                                    <!--! TBA: icono de ubicacion-->
+                                    <span>
+                                        <span class="solo-lectores"> Ubicación: </span>
+                                    Monterrey, Nuevo León
+                                    </span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato">
+                                    <span class="etiqueta">Tiempo Completo</span>
+                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
+                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
+                            </ul>
+                            <div class="tarjeta-vacante-acciones">
+                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
+                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="tarjeta tarjeta-vacante">
+                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+
+                            <ul class="tarjeta-vacante-datos">
+                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
+                                
+                                <li class="dato">
+                                    <!--! TBA: icono de ubicacion-->
+                                    <span>
+                                        <span class="solo-lectores"> Ubicación: </span>
+                                    Monterrey, Nuevo León
+                                    </span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato">
+                                    <span class="etiqueta">Tiempo Completo</span>
+                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
+                                </li>
+
+                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
+                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
+                            </ul>
+                            <div class="tarjeta-vacante-acciones">
+                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
+                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- OTRAS VACANTES-->
+
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+            <section aria-labelledby="pie-amac">
+                <h2 class="pie-titulo" id="pie-amac">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-labelledby="pie-secciones">
+                <h2 class="pie-titulo" id="pie-secciones">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="pie-enlace" href="registro-candidato.html">Crear cuenta de candidato</a></li>
+                    <li><a class="pie-enlace" href="registro-empresa.html">Registrar mi empresa</a></li>
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Panel de empresas</a></li>
+                </ul>
+            </nav>
+
+            <section class="pie-ayuda" aria-labelledby="pie-ayuda">
+                <h2 class="pie-titulo" id="pie-ayuda">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: <a class="pie-enlace" href="tel:+528100000000">81 0000 0000</a></p>
+                <a class="boton boton-acento" href="tel+528100000000">Llamar a AMAC</a>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
