@@ -24,4 +24,5 @@
     --espacio-l: 2rem;
     /*Para separar secciones, bloques de contenido o componentes principales que necesitan más espacio. */
     --radio: 0.5rem;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
