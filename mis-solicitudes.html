@@ -5,44 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Solicitudes | AMAC</title>
     <meta name="description" content="Página de Mis Solicitudes de AMAC, donde los usuarios pueden ver y gestionar sus solicitudes de empleo.">
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
 </head>
 
 <body>
     <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
-
-    <header class="encabezado">
-        <div class="contenedor encabezado-contenido">
-            <a class="logo" href="index.html">
-                <picture>
-                    <source media="(min-width: 48em)" srcset="img/logo-amac.png">
-                    <img src="img/logo-movil.png" width="77" height="39" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
-                </picture>
-            </a>
-
-            <input class="menu-casilla" type="checkbox" id="menuAbrir">
-            <label class="menu-boton" for="menuAbrir">
-                <span class="solo-lectores">Abrir menú</span>
-                <span aria-hidden="true">☰</span>
-            </label>
-
-            <nav class="nav-principal" aria-label="Navegación principal">
-                <ul class="nav-principal-lista">
-                    <li><a class="nav-principal-enlace" href="index.html">Buscar empleos</a></li>
-                    <li><a class="nav-principal-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
-                    <li><a class="nav-principal-enlace" href="empresa-vacantes.html" aria-current="page">Empresas</a></li>
-                    <li><a class="nav-principal-enlace" href="login.html">Iniciar sesión</a></li>
-                </ul>
-            </nav>
-
-            <a class="boton-contacto" href="tel:+528100000000" aria-label="Contáctanos por teléfono">
-                <span class="contacto-texto">Contáctanos</span>
-            </a>
-        </div>
-    </header>
 
     <main id="principal" class="principal">
         <div class="contenedor">
@@ -52,6 +22,33 @@
                     <p>Consulta tus postulaciones y revisa la respuesta de cada empresa.</p>
                 </div>
             </div>
+
+            <article class="tarjeta">
+
+                <div class="tarjeta-contenido">
+                    <h2 class="tarjeta-titulo">
+                        Puesto / Vacante
+                    </h2>
+            
+                    <p>Nombre de la empresa</p>
+            
+                    <p>
+                        <strong>Fecha de aplicación:</strong>
+                        DD/MM/AAAA
+                    </p>
+                </div>
+            
+                <div class="tarjeta-acciones">
+                    <span class="estado estado-pendiente">
+                        Pendiente
+                    </span>
+            
+                    <button class="btn btn-secundario" type="button">
+                        Cancelar Solicitud
+                    </button>
+                </div>
+            
+            </article>
 
         </div>
     </main>
@@ -76,12 +73,29 @@
             <section>
                 <h2 class="pie-titulo" >¿Necesitas ayuda?</h2>
                 <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: <a class="pie-enlace" href="tel:+528100000000">81 0000 0000</a></p>
-                <a class="boton boton-acento" href="tel:+528100000000">Llamar a AMAC</a>
+                <a class="btn btn-secundario"> <img src="img/icono-contacto.png" alt="icono de teléfono"> </span>Llamar a AMAC</a>
+
             </section>
 
             <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
         </div>
     </footer>
+
+    <script>
+        const boton = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu-nav");
+    
+        boton.addEventListener("click", () => {
+            const abierto = menu.classList.toggle("abierto");
+    
+            boton.setAttribute("aria-expanded", String(abierto));
+            boton.setAttribute(
+                "aria-label",
+                abierto ? "Cerrar menú" : "Abrir menú"
+            );
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+body {
+    font-family:var(--fuente-base);
+    font-size: var(--texto-base);
+    color: var(--color-azul-marino);
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--texto-h1);
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0;
+    font-size: var(--texto-h2);
+    font-weight: 700;
+}
+
+/* texto en bold*/
+
+b {
+    font-weight: 700;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Foco visible al navegar con Tab */
+:focus-visible {
+    outline: 3px solid var(--color-azul-marino);
+    outline-offset: 2px;
+}       
+
+.saltar-contenido { 
+    position: absolute; 
+    left: -9999px; 
+}
+
+.saltar-contenido:focus { 
+    left: 1rem; 
+    top: 1rem; 
+    background-color: var(--color-azul-claro);
+    border-radius: var(--radio);
+    margin: var(----espacio-s) var(----espacio-m)
+
+}
