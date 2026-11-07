@@ -80,22 +80,6 @@
             <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
         </div>
     </footer>
-
-    <script>
-        const boton = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu-nav");
-    
-        boton.addEventListener("click", () => {
-            const abierto = menu.classList.toggle("abierto");
-    
-            boton.setAttribute("aria-expanded", String(abierto));
-            boton.setAttribute(
-                "aria-label",
-                abierto ? "Cerrar menú" : "Abrir menú"
-            );
-        });
-    </script>
-
 </body>
 
 </html>
