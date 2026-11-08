@@ -125,13 +125,8 @@
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-
-    border: 2px solid transparent;
+    border: none;
     border-radius: var(--radio);
-
-    cursor: pointer;
-    white-space: normal;
-    overflow-wrap: anywhere;
 }
 
 /* VARIANTES */
@@ -160,6 +155,24 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+/* El texto del botón de contacto solo se ve en desktop */
+.texto-contacto {
+    display: none;
+}
+
+@media (min-width: 48rem) {
+    .btn-contacto{
+        width: 13.125rem; /* 210px */
+        min-height: 3.5rem; /* 56px */
+        border-radius: var(--radio);
+    }
+
+    /* El texto del botón de contacto solo se ve en desktop */
+    .texto-contacto {
+        display: var(--color-azul-marino);
+    }
 }
 
 /* ESTADOS */
