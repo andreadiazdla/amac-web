@@ -26,3 +26,11 @@
     --radio: 0.5rem;
     --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
+    @media (min-width: 90rem){
+        :root {
+            --texto-base: 1.5rem;  
+            --texto-h2: 2rem;
+            --texto-h1: 2.5rem;
+        }
+    }
