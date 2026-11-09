@@ -155,10 +155,6 @@
     .vacante-enviada .postular-boton {
         display: flex;
     }
-
-    .decoracion-desktop {
-        top: 10.25rem;
-    }
 }
 
 
@@ -218,6 +214,7 @@
 }
 
 @media (min-width: 64rem) {
+
     .decoracion-desktop {
         display: block;
     }
