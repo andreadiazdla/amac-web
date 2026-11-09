@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta de empresa | AMAC</title>
+    <meta name="description" content="Registra tu empresa en AMAC para publicar vacantes.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login">
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <!-- botón de llamar a AMAC -->
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos por teléfono">
+                <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <!-- logo pequeño: la barra solo se ve en celular -->
+            <a href="index.html" class="logo">
+                <img src="img/logo-movil.png"  alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+            </a>
+
+            <!-- menú hamburguesa para celular -->
+            <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+        </div>
+
+        <!-- navegación general -->
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="index.html">Buscar empleos</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Empresas</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+
+    <aside class="panel-marca" aria-label="Acerca de AMAC">
+        <a class="panel-marca-logo-enlace" href="index.html">
+            <img class="panel-marca-logo" src="img/logo-amac-blanco.png" width="291" height="75" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+        </a>
+
+        <div class="panel-marca-texto">
+            <p class="panel-marca-etiqueta">BOLSA DE TRABAJO PARA MAYORES</p>
+            <p class="panel-marca-lema">Envejecer es <span class="texto-coral">vivir.</span></p>
+            <p class="panel-marca-descripcion">Buscando un cambio cultural para el buen envejecimiento de las personas.</p>
+        </div>
+
+        <!-- botón de llamar a AMAC -->
+        <a class="btn btn-secundario panel-marca-boton" href="tel:+528100000000">
+            <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+            Contáctanos
+        </a>
+    </aside>
+
+    <main id="principal" class="panel-formulario">
+        <div class="contenedor">
+            <div class="formulario-encabezado">
+                <h1>Crea una cuenta</h1>
+                <p>Ingresa los datos de la empresa para crear una cuenta.</p>
+            </div>
+            <form class="formulario" action="registro-empresa-imagen.html" novalidate>
+                <div class="campo-formulario">
+                    <label for="nombreEmpresa">Nombre de la empresa <span aria-hidden="true">*</span></label>
+                    <input class="campo-formulario-entrada" type="text" id="nombreEmpresa" name="nombreEmpresa" autocomplete="organization" placeholder="Escribe el nombre de la empresa" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="giro">Giro <span aria-hidden="true">*</span></label>
+                    <input class="campo-formulario-entrada" type="text" id="giro" name="giro" placeholder="Escribe el giro de la empresa" required>
+                </div>
+                <div class="campo-formulario campo-formulario-invalido">
+                    <label for="rfc">RFC <span aria-hidden="true">*</span></label>
+                    <input class="campo-formulario-entrada" type="text" id="rfc" name="rfc" placeholder="Escribe el RFC de la empresa" value="ABC1234" required aria-invalid="true" aria-describedby="rfcError" maxlength="13" autocapitalize="characters">
+                    <p class="campo-formulario-error" id="rfcError">El RFC ingresado no tiene formato válido o ya ha sido registrado.</p>
+                </div>
+
+                <section class="formulario-seccion" aria-labelledby="direccion">
+                    <h2 id="direccion">Dirección</h2>
+                    <div class="campo-formulario">
+                        <label for="calle">Calle y número <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="calle" name="calle" autocomplete="address-line1" placeholder="Escribe la calle y número de la empresa" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="colonia">Colonia <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="colonia" name="colonia" autocomplete="address-level3" placeholder="Escribe la colonia de la empresa" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="codigoPostal">Código postal <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="codigoPostal" name="codigoPostal" autocomplete="postal-code" placeholder="Escribe el código postal de la empresa" required inputmode="numeric" maxlength="5">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="municipio">Municipio o ciudad <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="municipio" name="municipio" autocomplete="address-level2" placeholder="Escribe el municipio o ciudad de la empresa" required>
+                    </div>
+                </section>
+
+                <section class="formulario-seccion" aria-labelledby="datosContacto">
+                    <h2 id="datosContacto">Datos de contacto</h2>
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre(s) <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="nombre" name="nombre" autocomplete="given-name" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="apellidos">Apellidos <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="text" id="apellidos" name="apellidos" autocomplete="family-name" placeholder="Escribe tus apellidos" required>
+                    </div>
+                    <div class="campo-formulario campo-formulario-invalido">
+                        <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="Escribe el teléfono de la persona de contacto" value="81123" required aria-invalid="true" aria-describedby="telefonoError" inputmode="tel">
+                        <p class="campo-formulario-error" id="telefonoError">El teléfono ingresado no tiene formato válido o ya ha sido registrado.</p>
+                    </div>
+                    <div class="campo-formulario campo-formulario-invalido">
+                        <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="email" id="correo" name="correo" autocomplete="email" placeholder="Escribe el correo electrónico de la persona de contacto" value="contacto@empresa" required aria-invalid="true" aria-describedby="correoError">
+                        <p class="campo-formulario-error" id="correoError">El correo electrónico ingresado no tiene formato válido o ya ha sido registrado.</p>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="contrasena">Crea una contraseña <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="password" id="contrasena" name="contrasena" autocomplete="new-password" placeholder="Crea una contraseña" required>
+                        <div class="fila-enlaces">
+                            <button type="button" class="enlace-accion" data-mostrar-contrasena="contrasena" aria-pressed="false">Mostrar contraseña</button>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="confirmarContrasena">Confirma la contraseña <span aria-hidden="true">*</span></label>
+                        <input class="campo-formulario-entrada" type="password" id="confirmarContrasena" name="confirmarContrasena" autocomplete="new-password" placeholder="Confirma la contraseña" required>
+                        <div class="fila-enlaces">
+                            <button type="button" class="enlace-accion" data-mostrar-contrasena="confirmarContrasena" aria-pressed="false">Mostrar contraseña</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="separador-texto">
+                    <p>O continúa con tu cuenta de Google</p>
+                </div>
+                <button type="button" class="btn btn-contorno"><img class="icono" src="img/google-logo.webp" width="20" height="20" alt="">Continuar con Google</button>
+                <div class="aviso aviso-info">
+                    <p class="aviso-titulo">¡Ya casi acabas!</p>
+                    <p>Carga tu logo y tu banner para que los candidatos puedan reconocer tu empresa.</p>
+                </div>
+                <div class="grupo-botones">
+                    <a class="btn btn-terciario grupo-botones-item" href="login.html">Atrás</a>
+                    <a class="btn btn-primario grupo-botones-principal" href="registro-empresa-imagen.html">Siguiente paso</a>
+                </div>
+                <p class="fila-enlaces"><span>¿Ya tienes cuenta?</span> <a class="enlace-destacado" href="login.html">Inicia sesión</a></p>
+                <p><a class="enlace-destacado" href="registro-candidato.html">¿Buscas empleo? Regístrate como candidato</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
+
+</body>
+</html>
