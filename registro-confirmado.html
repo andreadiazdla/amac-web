@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta creada | AMAC</title>
+    <meta name="description" content="Tu cuenta de AMAC ha sido creada.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login">
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <!-- botón de llamar a AMAC -->
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos por teléfono">
+                <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-movil.png"  alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+            </a>
+
+            <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+        </div>
+
+        <!-- navegación general -->
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="index.html">Buscar empleos</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Empresas</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+
+    <aside class="panel-marca" aria-label="Acerca de AMAC">
+        <a class="panel-marca-logo-enlace" href="index.html">
+            <img class="panel-marca-logo" src="img/logo-amac-blanco.png" width="291" height="75" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+        </a>
+
+        <div class="panel-marca-texto">
+            <p class="panel-marca-etiqueta">BOLSA DE TRABAJO PARA MAYORES</p>
+            <p class="panel-marca-lema">Envejecer es <span class="texto-coral">vivir.</span></p>
+            <p class="panel-marca-descripcion">Buscando un cambio cultural para el buen envejecimiento de las personas.</p>
+        </div>
+
+        <!-- botón de llamar a AMAC -->
+        <a class="btn btn-secundario panel-marca-boton" href="tel:+528100000000">
+            <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+            Contáctanos
+        </a>
+    </aside>
+
+    <main id="principal" class="panel-formulario panel-formulario-centrado panel-formulario-decorado">
+        <div class="contenedor">
+            <div class="formulario-encabezado">
+                <h1>Tu cuenta ha sido creada</h1>
+                <p>Gracias por registrarte en AMAC.</p>
+            </div>
+            <a class="btn btn-secundario" href="index.html">Volver al inicio</a>
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
+
+</body>
+</html>
