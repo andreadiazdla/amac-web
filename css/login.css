@@ -1,6 +1,5 @@
 .login {
     --color-azul-marino-claro: #2F3751;
-    --color-error: #DB0000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -45,7 +44,7 @@
 .panel-marca {
     position: relative;
     overflow: hidden;
-    order: 2; /* en celular va después del formulario */
+    order: 2; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,7 +68,7 @@
 
 .panel-marca-logo-enlace {
     position: relative;
-    display: none; /* en celular el logo está en la barra superior */
+    display: none;
     width: 9.5rem;
     padding: var(--espacio-s) 0;
 }
@@ -204,7 +203,7 @@
 .enlace-accion {
     display: inline-flex;
     align-items: center;
-    min-height: 2.75rem; /* 44 px de área táctil */
+    min-height: 2.75rem;
     border: 0;
     background-color: transparent;
     text-decoration: underline;
@@ -253,7 +252,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 1.125rem; /* 1 rem de espacio + 2 px del borde */
+    left: 1.125rem; 
     width: 1.25rem;
     height: 1.25rem;
     margin: auto 0;
@@ -262,8 +261,7 @@
 
 .grupo-opciones-etiqueta {
     display: block;
-    padding: 0.75rem var(--espacio-m) 0.75rem 3rem; /* 3 rem = espacio + radio + separación */
-    border: 2px solid var(--color-gris);
+    padding: 0.75rem var(--espacio-m) 0.75rem 3rem; 
     border-radius: var(--radio);
     background-color: var(--color-blanco);
 }
@@ -501,7 +499,7 @@
         align-self: start;
         justify-content: center;
         height: 100vh;
-        padding: 4.5rem 2.5rem 2.5rem; /* más espacio arriba: el logo queda fijo en la esquina */
+        padding: 4.5rem 2.5rem 2.5rem; 
     }
 
     .panel-marca-logo-enlace {
