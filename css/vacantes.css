@@ -6,7 +6,7 @@ main {
 .atras-detalle {
     margin-top: 2rem;
     margin-left: var(--espacio-s);
-    margin-bottom: var(--espacio-s);
+    margin-bottom: var(--espacio-l);
 }
 
 .encabezado-detalle {
@@ -23,6 +23,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-color: var(--color-blanco);
     border: 1.5px solid var(--color-gris);
     border-radius: var(--radio);
