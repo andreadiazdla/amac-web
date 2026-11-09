@@ -1,0 +1,255 @@
+/* Estilo general de todas las tarjetas */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+
+    width: 100%;
+    padding: var(--espacio-m);
+
+    background-color: var(--color-blanco);
+    border: 1.5px solid var(--color-gris);
+    border-radius: var(--radio);
+}
+
+/* Contenido principal */
+.tarjeta-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-s);
+    min-width: 0;
+}
+
+/* Información y descripciones */
+.tarjeta p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Contenedor de estados y botones */
+.tarjeta-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    width: 100%;
+}
+
+.tarjeta-acciones .btn,
+.tarjeta-acciones .estado {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 48rem) {
+
+    /* Información a la izquierda y acciones a la derecha */
+    .tarjeta {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--espacio-m);
+    }
+
+    /* Contenido principal */
+    .tarjeta-contenido {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Estados y botones */
+    .tarjeta-acciones {
+        width: 13.125rem; /* 210px */
+        align-items: flex-end;
+        gap: var(--espacio-s);
+    }
+
+    /* Ambos ocupan todo el ancho de su contenedor */
+    .tarjeta-acciones .btn,
+    .tarjeta-acciones .estado {
+        width: fit-content;
+    }
+}
+
+
+/* Estilo general para todos los estados */
+.estado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.25rem;
+
+    padding: 0.125rem var(--espacio-s);
+
+    font-size: var(--texto-base);
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*<span class="estado estado-pendiente">Estado</span>*/
+
+.estado-pendiente {
+    background-color: var(--color-amarillo-claro);
+}
+
+.estado-aceptada {
+    background-color: var(--color-azul-claro);
+}
+
+.estado-rechazada {
+    background-color: var(--color-coral);
+}
+
+.estado-revision {
+    background-color: var(--color-amarillo-claro);
+}
+
+.estado-cancelada {
+    background-color: var(--color-gris-claro);
+}
+
+/* Botón */
+
+.btn {
+    display: inline-flex;
+    width: 13.125rem; /* 210px */
+    min-height: 3.5rem; /* 56px */
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: var(--espacio-s) var(--espacio-m);
+    justify-content: center;
+    align-items: center;
+    gap: var(--espacio-s);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radio);
+}
+
+/* VARIANTES */
+
+.btn-primario {
+    background-color: var(--color-azul-marino);
+    color: var(--color-blanco);
+}
+
+.btn-secundario {
+    background-color: var(--color-coral);
+    color: var(--color-azul-marino);
+}
+
+.btn-terciario {
+    background-color: var(--color-gris-claro);
+    color: var(--color-azul-marino);
+}
+
+.btn-contacto {
+    width: 3.5rem; /* 56px */
+    height: 3.5rem; /* 56px */
+    border-radius: 50%;
+    background-color: var(--color-coral);
+    color: var(--color-azul-marino);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* El texto del botón de contacto solo se ve en desktop */
+.texto-contacto {
+    display: none;
+}
+
+@media (min-width: 48rem) {
+    .btn-contacto{
+        width: 13.125rem; /* 210px */
+        min-height: 3.5rem; /* 56px */
+        border-radius: var(--radio);
+    }
+
+    /* El texto del botón de contacto solo se ve en desktop */
+    .texto-contacto {
+        display: var(--color-azul-marino);
+    }
+}
+
+/* ESTADOS */
+
+.btn-primario:hover {
+    background-color: #303D60;
+}
+
+.btn-contacto:hover,
+.btn-secundario:hover{
+    background-color: #FF9F83;
+}
+
+.btn-terciario:hover {
+    background-color: #EDECEC;
+}
+
+.btn:disabled {
+    background-color: var(--color-gris);
+    color: #8C8C8C;
+    cursor: not-allowed;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.icono {
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+    object-fit: contain;
+}
+
+
+/* buscador */
+.buscador {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: var(--espacio-s);
+    width: 100%;
+    max-width: 50rem;
+    min-width: 0;
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-gris);
+    border-radius: 5rem;
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+}
+
+/* listado de vacantes */
+.vacante {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    min-width: 0;
+    padding: var(--espacio-m) var(--espacio-m) 1.25rem;
+    border: 1px solid var(--color-gris);
+    border-radius: var(--espacio-m);
+    background-color: var(--color-blanco);
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 48rem) {
+    .buscador {
+        flex: 1 1 24rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .buscador {
+        border-radius: 2rem;
+    }
+
+    .vacante {
+        min-height: 25.75rem;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+}

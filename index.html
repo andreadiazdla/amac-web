@@ -1,216 +1,261 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar empleos | AMAC</title>
-    <meta name="description" content="Vacantes de empleo para personas mayores en AMAC.">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/componentes.css">
-    <script src="js/app.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buscar empleos | AMAC</title>
+        <meta name="description" content="Vacantes de empleo para personas mayores en AMAC., donde los usuarios pueden ver y postularse a vacantes de empleo.">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/componentes.css">
+        <link rel="stylesheet" href="css/index.css"
+    </head>
 
+    <body>
+        <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
 
-<body>
-
-    <header class="encabezado">
-        <div class="contenedor encabezado-contenido">
-            <!--! imagen de logo iría aquí-->
-
-            <!-- navegación general -->
-            <nav class="nav-principal" aria-label="Navegación principal">
-                <ul class="nav-principal-lista">
-                    <li><a class="nav-principal-enlace" href="index.html" aria-current="page">Buscar empleos</a></li>
-                    <li><a class="nav-principal-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
-                    <li><a class="nav-principal-enlace" href="empresa-vacantes.html">Empresas</a></li>
-                    <li><a class="nav-principal-enlace" href="login.html">Iniciar sesión</a></li>
-                </ul>
-            </nav>
-
-            <!-- boton de llamar a AMAC -->
-            <a class="boton boton-acento" href="tel:+528100000000">
-                <!--! TBA: icono-->
-                Contáctanos
-                <span class="solo-lectores"> por teléfono </span> <!-- solo-lectores es para lectores d pantalla -->
-            </a>
+        <div class="decoracion decoracion-desktop" aria-hidden="true">
+            <img class="fd1" src="img/decoracion/fondo-desktop-1.svg" alt="">
+            <img class="fd2" src="img/decoracion/fondo-desktop-2.svg" alt="">
+            <img class="fd3" src="img/decoracion/fondo-desktop-3.svg" alt="">
         </div>
-    </header>
 
-    <main id="principal" class="principal">
-        <div class="contenedor">
-            <h1 class="solo-lectores">Buscar empleos</h1>
+        <div class="decoracion decoracion-movil" aria-hidden="true">
+            <img class="fm1" src="img/decoracion/fondo-movil-1.svg" alt="">
+            <img class="fm2" src="img/decoracion/fondo-movil-2.svg" alt="">
+            <img class="fm3" src="img/decoracion/fondo-movil-3.svg" alt="">
+            <img class="fm4" src="img/decoracion/fondo-movil-4.svg" alt="">
+            <img class="fm5" src="img/decoracion/fondo-movil-5.svg" alt="">
+            <img class="fm6" src="img/decoracion/fondo-movil-6.svg" alt="">
+            <img class="fm7" src="img/decoracion/fondo-movil-7.svg" alt="">
+            <img class="fm8" src="img/decoracion/fondo-movil-8.svg" alt="">
+            <img class="fm9" src="img/decoracion/fondo-movil-9.svg" alt="">
+            <img class="fm10" src="img/decoracion/fondo-movil-10.svg" alt="">
+            <img class="fm11" src="img/decoracion/fondo-movil-11.svg" alt="">
+            <img class="fm12" src="img/decoracion/fondo-movil-12.svg" alt="">
+            <img class="fm13" src="img/decoracion/fondo-movil-13.svg" alt="">
+        </div>
 
-            <form class="buscador" action="index.html" method="get" role="search" aria-label="Buscar Vacantes">
-                <div class="buscador-grupo">
-                    <label class="buscador-etiqueta" for="buscar">Buscar por palabra clave</label>
-                    <div class="buscador-caja">
-                        <input class="buscador-campo" type="search" id="buscar" name="q" placeholder="Ej. cajero">
-                        <button class="boton boton-primario" type="submit">Buscar</button>
-                    </div>
-                </div>
-                <!--! TBA: FILTROS (fml)-->
+        <header class="header">
+            <div class="barra">
+                <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                    <img class="icono" src="img/icono-contacto.png" alt="">
+                    <span class="texto-contacto">Contáctanos</span>
+                </a>
+        
+                <a href="#" class="logo">
+                    <picture>
+                        <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                        <img src="img/logo-movil.png" alt="AMAC">
+                    </picture>
+                </a>
+        
+                <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+            </div>
+        
+            <nav class="menu" id="menu">
+                <a href="index.html">Buscar empleos</a>
+                <a href="mis-solicitudes.html">Mis solicitudes</a>
+                <a href="#">Mi perfil</a>
+            </nav>
+        </header>
+
+
+        <div class="herramientas">
+            <form
+                class="buscador"
+                action="index.html"
+                method="get"
+                role="search"
+            >
+
+                <input
+                    id="palabras-clave"
+                    name="busqueda"
+                    type="search"
+                    placeholder="Palabras clave..."
+                >
+
+                <span class="separador" aria-hidden="true"></span>
+
+                <button
+                    class="btn btn-primario buscar-boton"
+                    type="submit"
+                    aria-label="Buscar"
+                >
+                    <span>Buscar</span>
+                    <img
+                        src="img/buscar-blanco.svg"
+                        alt=""
+                        width="24"
+                        height="25"
+                    >
+                </button>
             </form>
 
+                <div class="filtros" role="group" aria-label="Filtros de vacantes">
+                    <button class="btn btn-primario" type="button">
+                        <img src="img/horarios.svg" alt="" width="24" height="25">
+                        Horarios
+                    </button>
 
-            <section aria-label="titulo-vacantes">
-                <h2 class="solo-lectores" id="titulo-vacantes">Vacantes disponibles</h2>
+                    <button class="btn btn-primario" type="button">
+                        <img src="img/categorias.svg" alt="" width="24" height="25">
+                        Categorías
+                    </button>
+                </div>
+            </div>
 
-                <ul class="lista-vacantes">
-                    <li>
-                        <article class="tarjeta tarjeta-vacante">
-                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+        <main>
+            <section class="vacantes" aria-label="Listado de vacantes">
 
-                            <ul class="tarjeta-vacante-datos">
-                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
-                                
-                                <li class="dato">
-                                    <!--! TBA: icono de ubicacion-->
-                                    <span>
-                                        <span class="solo-lectores"> Ubicación: </span>
-                                    Monterrey, Nuevo León
-                                    </span>
-                                </li>
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Puesto / Vacante</h2>
+                            <p class="empresa">Nombre Empresa</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Ciudad, Estado
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">XXX Tiempo</span>
+                                <span>Modalidad</span>
+                            </p>
+                            <p>Días de la semana - XX:XX a XX:XX</p>
+                            <p><b>$XXX MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
 
-                                <li class="tarjeta-vacante-dato">
-                                    <span class="etiqueta">Tiempo Completo</span>
-                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
-                                </li>
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Puesto / Vacante</h2>
+                            <p class="empresa">Nombre Empresa</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Ciudad, Estado
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">XXX Tiempo</span>
+                                <span>Modalidad</span>
+                            </p>
+                            <p>Días de la semana - XX:XX a XX:XX</p>
+                            <p><b>$XXX MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <aside class="aviso-telefono" aria-label="Medios de postulación">
+                        <p>La empresa acepta postulaciones por la plataforma o por teléfono.</p>
+                        <b>00 0000 0000</b>
+                    </aside>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
 
-                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
-                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
-                            </ul>
-                            <div class="tarjeta-vacante-acciones">
-                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
-                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
-                            </div>
-                        </article>
-                    </li>
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Puesto / Vacante</h2>
+                            <p class="empresa">Nombre Empresa</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Ciudad, Estado
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">XXX Tiempo</span>
+                                <span>Modalidad</span>
+                            </p>
+                            <p>Días de la semana - XX:XX a XX:XX</p>
+                            <p><b>$XXX MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <aside class="aviso-enviada" aria-label="Estado de la solicitud">
+                        <b>¡Solicitud enviada!</b>
+                        <p>Tu postulación quedó registrada en Mis solicitudes.</p>
+                    </aside>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-terciario" type="button">Mis solicitudes</button>
+                    </div>
+                </article>
 
-                    <li>
-                        <article class="tarjeta tarjeta-vacante">
-                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Puesto / Vacante</h2>
+                            <p class="empresa">Nombre Empresa</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Ciudad, Estado
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">XXX Tiempo</span>
+                                <span>Modalidad</span>
+                            </p>
+                            <p>Días de la semana - XX:XX a XX:XX</p>
+                            <p><b>$XXX MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
 
-                            <ul class="tarjeta-vacante-datos">
-                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
-                                
-                                <li class="dato">
-                                    <!--! TBA: icono de ubicacion-->
-                                    <span>
-                                        <span class="solo-lectores"> Ubicación: </span>
-                                    Monterrey, Nuevo León
-                                    </span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato">
-                                    <span class="etiqueta">Tiempo Completo</span>
-                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
-                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
-                            </ul>
-                            <div class="tarjeta-vacante-acciones">
-                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
-                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article class="tarjeta tarjeta-vacante">
-                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
-
-                            <ul class="tarjeta-vacante-datos">
-                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
-                                
-                                <li class="dato">
-                                    <!--! TBA: icono de ubicacion-->
-                                    <span>
-                                        <span class="solo-lectores"> Ubicación: </span>
-                                    Monterrey, Nuevo León
-                                    </span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato">
-                                    <span class="etiqueta">Tiempo Completo</span>
-                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
-                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
-                            </ul>
-                            <div class="tarjeta-vacante-acciones">
-                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
-                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article class="tarjeta tarjeta-vacante">
-                            <h3 class="tarjeta-vacante-titulo">Asistente administrativo</h3>
-
-                            <ul class="tarjeta-vacante-datos">
-                                <li class="tarjeta-vacante-empresa">Ferretería Del Norte</li>
-                                
-                                <li class="dato">
-                                    <!--! TBA: icono de ubicacion-->
-                                    <span>
-                                        <span class="solo-lectores"> Ubicación: </span>
-                                    Monterrey, Nuevo León
-                                    </span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato">
-                                    <span class="etiqueta">Tiempo Completo</span>
-                                    <span class="tarjeta-vacante-modalidad">Híbrido</span>
-                                </li>
-
-                                <li class="tarjeta-vacante-dato"><span class="solo-lectores">Horario: </span>Lunes a viernes - 09:00 a 17:00</li>
-                                <li class="tarjeta-vacante-sueldo"><span class="solo-lectores">Sueldo: </span>$11,000 MXN al mes</li>
-                            </ul>
-                            <div class="tarjeta-vacante-acciones">
-                                <a class="boton boton-secundario" href="vacante.html">Ver más<span class="solo-lectores"> sobre Asistente Administrativo</span></a>
-                                <a class="boton boton-primario" href="mis-solicitudes.html#solicitud-enviada">Postularme<span class="solo-lectores"> a Asistente administrativo</span></a>
-                            </div>
-                        </article>
-                    </li>
-
-                    <!-- OTRAS VACANTES-->
-
-                </ul>
             </section>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="pie" id="contacto">
         <div class="contenedor pie-contenido">
-            <section aria-labelledby="pie-amac">
-                <h2 class="pie-titulo" id="pie-amac">AMAC</h2>
+    
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
                 <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
             </section>
-
-            <nav aria-labelledby="pie-secciones">
-                <h2 class="pie-titulo" id="pie-secciones">Secciones</h2>
+    
+            <nav aria-label="Secciones del pie de página">
+                <h2 class="pie-titulo">Secciones</h2>
                 <ul class="pie-lista">
                     <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
                     <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
-                    <li><a class="pie-enlace" href="registro-candidato.html">Crear cuenta de candidato</a></li>
-                    <li><a class="pie-enlace" href="registro-empresa.html">Registrar mi empresa</a></li>
-                    <li><a class="pie-enlace" href="empresa-vacantes.html">Panel de empresas</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                
                 </ul>
             </nav>
-
-            <section class="pie-ayuda" aria-labelledby="pie-ayuda">
-                <h2 class="pie-titulo" id="pie-ayuda">¿Necesitas ayuda?</h2>
-                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: <a class="pie-enlace" href="tel:+528100000000">81 0000 0000</a></p>
-                <a class="boton boton-acento" href="tel+528100000000">Llamar a AMAC</a>
+    
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
             </section>
-
+    
             <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+    
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
 </body>
 </html>

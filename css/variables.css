@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* Colores */
+    --color-azul-marino: #202945;
+    --color-coral: #FF815C;
+    --color-gris: #A8A8A8;
+    --color-blanco: #FFFFFF;
+    --color-azul-claro: #CAE4EF;
+    --color-amarillo-claro: #FDDAAD;
+    --color-gris-claro: #F1EFEE;
+
+    /* Tipografía */
+    --fuente-base: "Atkinson Hyperlegible", system-ui, sans-serif;
+    --texto-base: 1.25rem;  
+    --texto-h2: 1.75rem;
+    --texto-h1: 2.25rem;
+
+    /* Espaciados y bordes */
+    --espacio-s: 0.5rem;
+    /*Para separar elementos cercanos, como íconos y textos,etiquetas, botones pequeños o elementos dentro de un componente.*/
+    --espacio-m: 1rem;
+    /*Para separar elementos relacionados, como campos de formularios, tarjetas, botones o elementos dentro de un contenedor. */
+    --espacio-l: 2rem;
+    /*Para separar secciones, bloques de contenido o componentes principales que necesitan más espacio. */
+    --radio: 0.5rem;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 90rem){
+        :root {
+            --texto-base: 1.5rem;  
+            --texto-h2: 2rem;
+            --texto-h1: 2.5rem;
+        }
+    }
