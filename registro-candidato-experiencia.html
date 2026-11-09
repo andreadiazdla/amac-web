@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu experiencia | AMAC</title>
+    <meta name="description" content="Cuéntanos tu experiencia y tus habilidades para terminar tu registro en AMAC.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login">
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <!-- botón de llamar a AMAC -->
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos por teléfono">
+                <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-movil.png"  alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+            </a>
+
+            <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+        </div>
+
+        <!-- navegación general -->
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="index.html">Buscar empleos</a>
+            <a href="mis-solicitudes.html">Mis solicitudes</a>
+            <a href="empresa-vacantes.html">Empresas</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+
+    <aside class="panel-marca" aria-label="Acerca de AMAC">
+        <a class="panel-marca-logo-enlace" href="index.html">
+            <img class="panel-marca-logo" src="img/logo-amac-blanco.png" width="291" height="75" alt="AMAC, Asociación de Mayores A.C. Ir al inicio">
+        </a>
+
+        <div class="panel-marca-texto">
+            <p class="panel-marca-etiqueta">BOLSA DE TRABAJO PARA MAYORES</p>
+            <p class="panel-marca-lema">Envejecer es <span class="texto-coral">vivir.</span></p>
+            <p class="panel-marca-descripcion">Buscando un cambio cultural para el buen envejecimiento de las personas.</p>
+        </div>
+
+        <!-- botón de llamar a AMAC -->
+        <a class="btn btn-secundario panel-marca-boton" href="tel:+528100000000">
+            <img class="icono" src="img/icono-contacto.png" width="19" height="19" alt="">
+            Contáctanos
+        </a>
+    </aside>
+
+    <main id="principal" class="panel-formulario">
+        <div class="contenedor">
+            <div class="formulario-encabezado">
+                <h1>Tu experiencia cuenta</h1>
+                <p>No te preocupes, puedes entrar sin experiencia.</p>
+            </div>
+            <form class="formulario" action="registro-pendiente.html" novalidate>
+                <div class="casilla">
+                    <input class="casilla-entrada" type="checkbox" id="sinExperiencia" name="sinExperiencia">
+                    <label class="casilla-etiqueta" for="sinExperiencia">Aún no tengo experiencia</label>
+                </div>
+
+                <section class="tarjeta-experiencia" aria-labelledby="experiencia1">
+                    <div class="tarjeta-experiencia-encabezado">
+                        <h2 id="experiencia1">Experiencia laboral</h2>
+                        <button type="button" class="enlace-accion" aria-label="Eliminar experiencia laboral">Eliminar</button>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="puesto">Puesto</label>
+                        <input class="campo-formulario-entrada" type="text" id="puesto" name="puesto" placeholder="Escribe tu puesto">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="empresa">Empresa</label>
+                        <input class="campo-formulario-entrada" type="text" id="empresa" name="empresa" placeholder="Escribe tu empresa">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="periodo">Periodo</label>
+                        <input class="campo-formulario-entrada" type="text" id="periodo" name="periodo" placeholder="Escribe el periodo en el que trabajaste ahí">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="campo-formulario-entrada" id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos un poco más sobre tus responsabilidades en este trabajo"></textarea>
+                    </div>
+                </section>
+                <button type="button" class="btn btn-terciario">+ Agregar experiencia</button>
+
+                <section class="formulario-seccion" aria-labelledby="habilidades">
+                    <h2 id="habilidades">Agrega alguna habilidad</h2>
+                    <ul class="lista-chips" aria-label="Habilidades agregadas">
+                        <li class="chip">Excel <button class="chip-quitar" type="button" aria-label="Quitar habilidad Excel"><svg class="chip-icono" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></li>
+                    </ul>
+                    <div class="campo-formulario">
+                        <label for="habilidad">Agrega las habilidades que puedas aportar</label>
+                        <input class="campo-formulario-entrada" type="text" id="habilidad" name="habilidad" placeholder="Escribe una habilidad">
+                    </div>
+                </section>
+
+                <section class="formulario-seccion" aria-labelledby="antesCuenta">
+                    <div class="formulario-encabezado">
+                        <h2 id="antesCuenta">Antes de crear tu cuenta</h2>
+                        <p>Consulta los documentos y acepta ambos para completar el registro.</p>
+                    </div>
+                    <div class="casilla">
+                        <input class="casilla-entrada" type="checkbox" id="terminos" name="terminos" required>
+                        <label class="casilla-etiqueta" for="terminos">He leído y acepto los <a href="#">Términos y condiciones</a> (obligatorio).</label>
+                    </div>
+                    <div class="casilla">
+                        <input class="casilla-entrada" type="checkbox" id="privacidad" name="privacidad" required>
+                        <label class="casilla-etiqueta" for="privacidad">He leído y acepto el <a href="#">Aviso de privacidad</a> (obligatorio).</label>
+                    </div>
+                </section>
+
+                <div class="grupo-botones">
+                    <a class="btn btn-terciario grupo-botones-item" href="registro-candidato.html">Atrás</a>
+                    <a class="btn btn-primario grupo-botones-principal" href="registro-pendiente.html">Registrarse</a>
+                </div>
+                <p class="fila-enlaces"><span>¿Ya tienes cuenta?</span> <a class="enlace-destacado" href="login.html">Inicia sesión</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
+
+</body>
+</html>
