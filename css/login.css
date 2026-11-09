@@ -414,6 +414,7 @@
     width: 4rem;
     height: 4rem;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .zona-carga-texto {
