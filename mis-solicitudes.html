@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Solicitudes | AMAC</title>
+    <meta name="description" content="Página de Mis Solicitudes de AMAC, donde los usuarios pueden ver y gestionar sus solicitudes de empleo.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                <img class="icono" src="img/icono-contacto.png" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+    
+          <a href="#" class="logo">
+            <picture>
+                <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                <img src="img/logo-movil.png" alt="AMAC">
+            </picture>
+        </a>
+    
+          <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+        </div>
+    
+        <nav class="menu" id="menu">
+          <a href="index.html">Buscar empleos</a>
+          <a href="mis-solicitudes.html">Mis solicitudes</a>
+          <a href="#">Mi perfil</a>
+        </nav>
+      </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor grid">
+            <div class="encabezado-pagina">
+                    <h1 class="titulo-pagina">Mis Solicitudes</h1>
+                    <p>Consulta tus postulaciones y revisa la respuesta de cada empresa.</p>
+            </div>
+
+            <div class="grid">
+                
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">
+                            Puesto / Vacante
+                        </h2>
+                        <p>Nombre de la empresa</p>
+                        <p>
+                            <strong>Fecha de aplicación:</strong>
+                            DD/MM/AAAA
+                        </p>
+                    </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-rechazada">
+                            Rechazada
+                        </span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">
+                            Puesto / Vacante
+                        </h2>
+                        <p>Nombre de la empresa</p>
+                        <p>
+                            <strong>Fecha de aplicación:</strong>
+                            DD/MM/AAAA
+                        </p>
+                    </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-pendiente">
+                            Pendiente
+                        </span>
+                        <button class="btn btn-terciario" type="button">
+                            Cancelar Solicitud
+                        </button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">
+                            Puesto / Vacante
+                        </h2>
+                        <p>Nombre de la empresa</p>
+                        <p>
+                            <strong>Fecha de aplicación:</strong>
+                            DD/MM/AAAA
+                        </p>
+                    </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-aceptada">
+                            Aceptada
+                        </span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">
+                            Puesto / Vacante
+                        </h2>
+                        <p>Nombre de la empresa</p>
+                        <p>
+                            <strong>Fecha de aplicación:</strong>
+                            DD/MM/AAAA
+                        </p>
+                    </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-pendiente">
+                            Pendiente
+                        </span>
+                        <button class="btn btn-terciario" type="button">
+                            Cancelar Solicitud
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+    
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+    
+            <nav aria-label="Secciones del pie de página">
+                <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                
+                </ul>
+            </nav>
+    
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
+            </section>
+    
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+    
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
+
+</body>
+
+</html>
