@@ -236,6 +236,12 @@
     overflow-wrap: anywhere;
 }
 
+.etiqueta {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-coral);
+}
+
 @media (min-width: 48rem) {
     .buscador {
         flex: 1 1 24rem;
@@ -251,6 +257,24 @@
         min-height: 25.75rem;
         font-size: 1.5rem;
         line-height: 1.25;
+    }
+}
+
+.vacante-ampliada {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    width: 100%;
+    padding: var(--espacio-m);
+    background-color: var(--color-blanco);
+    border: 1.5px solid var(--color-gris);
+    border-radius: var(--radio);
+    margin-bottom: var(--espacio-m);
+}
+
+@media (min-width: 48rem) {
+    .vacante-ampliada {
+        padding: var(--espacio-l);
     }
 }
 
