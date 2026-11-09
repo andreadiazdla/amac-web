@@ -206,6 +206,78 @@
     object-fit: contain;
 }
 
+
+/* buscador */
+.buscador {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: var(--espacio-s);
+    width: 100%;
+    max-width: 50rem;
+    min-width: 0;
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-gris);
+    border-radius: 5rem;
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+}
+
+/* listado de vacantes */
+.vacante {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    min-width: 0;
+    padding: var(--espacio-m) var(--espacio-m) 1.25rem;
+    border: 1px solid var(--color-gris);
+    border-radius: var(--espacio-m);
+    background-color: var(--color-blanco);
+    overflow-wrap: anywhere;
+}
+
+.etiqueta {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: var(--color-coral);
+}
+
+@media (min-width: 48rem) {
+    .buscador {
+        flex: 1 1 24rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .buscador {
+        border-radius: 2rem;
+    }
+
+    .vacante {
+        min-height: 25.75rem;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+}
+
+.vacante-ampliada {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+    width: 100%;
+    padding: var(--espacio-m);
+    background-color: var(--color-blanco);
+    border: 1.5px solid var(--color-gris);
+    border-radius: var(--radio);
+    margin-bottom: var(--espacio-m);
+}
+
+@media (min-width: 48rem) {
+    .vacante-ampliada {
+        padding: var(--espacio-l);
+    }
+}
+
 /* 404 */
 
 .pagina-error {

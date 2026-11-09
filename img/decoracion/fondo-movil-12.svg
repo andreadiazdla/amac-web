@@ -1,0 +1,14 @@
+<svg width="102" height="180" viewBox="0 0 102 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="102" height="180" fill="#F5F5F5"/>
+<g id="Buscar empleos M&#195;&#179;vil" clip-path="url(#clip0_498_2282)">
+<rect width="375" height="2030" transform="translate(-273.5 -1768)" fill="white"/>
+<g id="Frame 226">
+<path id="Ellipse (Stroke)" opacity="0.07" d="M155.785 89.9999C155.785 51.2665 124.775 22.5899 89.9999 22.5899C55.2251 22.5899 24.2152 51.2665 24.2152 89.9999C24.2152 128.733 55.225 157.41 89.9999 157.41V180L89.4178 179.998C39.9801 179.685 0 139.511 0 89.9999C5.58878e-05 40.2943 40.2943 6.99105e-05 89.9999 0C139.705 0 180 40.2943 180 89.9999L179.998 90.582C179.685 140.02 139.511 180 89.9999 180V157.41C124.775 157.41 155.785 128.733 155.785 89.9999Z" fill="#202945"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_498_2282">
+<rect width="375" height="2030" fill="white" transform="translate(-273.5 -1768)"/>
+</clipPath>
+</defs>
+</svg>

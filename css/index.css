@@ -1,0 +1,237 @@
+
+.separador {
+    height: 1.5rem;
+    border-left: 1px solid var(--color-gris);
+}
+
+.buscar-boton {
+    min-width: 3.5rem;
+    padding: 0.75rem;
+    border-radius: 1.25rem;
+    width: auto;
+}
+
+.buscador input {
+    width: 100%;
+    min-width: 0;
+    min-height: 3.5rem;
+    padding: var(--espacio-s);
+    border: 0;
+    border-radius: var(--radio);
+    background-color: var(--color-blanco);
+    color: var(--color-azul-marino);
+    font-size: var(--texto-base);
+}
+
+.buscador input::placeholder {
+    color: var(--color-azul-marino);
+    opacity: 1;
+}
+
+.buscar-icono,
+.buscar-boton span {
+    display: none;
+}
+
+.buscar-boton img {
+    display: block;
+}
+
+.filtros .btn {
+    flex: 1 1 9.25rem;
+    min-width: min(100%, 9.25rem);
+    padding-inline: 0.75rem;
+    overflow-wrap: normal;
+}
+
+
+.empresa {
+    margin-top: 0.2rem;
+}
+
+.condiciones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.ubicacion,
+.jornada {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-s);
+}
+
+.jornada {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.acciones-vacante {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-s);
+    margin-top: auto;
+}
+
+.acciones-vacante .btn {
+    width: 100%;
+}
+
+.aviso-telefono {
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-gris);
+    border-radius: 0.75rem;
+    box-shadow: var(--sombra);
+}
+
+.aviso-enviada {
+    padding: var(--espacio-m);
+    border-radius: var(--radio);
+    background-color: var(--color-azul-claro);
+}
+
+.aviso-enviada p {
+    margin-top: 0.25rem;
+}
+
+
+@media (min-width: 64rem) {
+    .buscar-icono {
+        display: block;
+    }
+
+    .buscar-boton {
+        padding-inline: 1.5rem;
+        border-radius: var(--radio);
+    }
+
+    .buscar-boton span {
+        display: inline;
+    }
+
+    .buscar-boton img {
+        display: none;
+    }
+
+    
+    .vacante h2 {
+        font-size: 2rem;
+    }
+
+    .condiciones {
+        margin-top: var(--espacio-s);
+    }
+
+    .acciones-vacante {
+        gap: var(--espacio-m);
+    }
+
+    .vacante-telefono {
+        order: 4;
+    }
+
+    .vacante-final {
+        order: 2;
+    }
+
+    .aviso-telefono,
+    .aviso-enviada {
+        font-size: var(--texto-base);
+    }
+
+    .aviso-enviada,
+    .solicitudes-boton {
+        display: none;
+    }
+
+    .vacante-enviada .postular-boton {
+        display: flex;
+    }
+}
+
+
+
+.decoracion {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.decoracion img {
+    position: absolute;
+    max-width: none;
+}
+
+.decoracion-desktop {
+    display: none;
+}
+
+.decoracion-movil {
+    display: block;
+}
+
+
+
+.fm1 { left: 0; top: 50rem; }
+.fm2 { left: 15rem; top: 65rem; }
+.fm3 { left: 0; top: 60rem; }
+.fm4 { left: 15rem; top: 80rem; }
+.fm5 { left: 0; top: 70rem; }
+.fm6 { left: 15rem; top: 6rem; }
+.fm7 { left: 14rem; top: 21rem; }
+.fm8 { left: 0; top: 12rem; }
+.fm9 { left: 14.5rem; top: 35rem; }
+.fm10 { left: 0; top: 35rem; }
+.fm11 { left: 17rem; top: 95rem; }
+.fm12 { left: 17rem; top: 110rem; }
+.fm13 { left: 0.1rem; top: 101rem; }
+.fm14 { left: 17rem; top: 125rem; }
+
+
+@media (min-width: 48rem) {
+    .fm1 { left: 41rem; top: 45rem; }
+    .fm2 { left: 41rem; top: 65rem; }
+    .fm3 { left: 0; top: 60rem; }
+    .fm4 { left: 20rem; top: 47rem; }
+    .fm5 { left: 20rem; top: 67rem; }
+    .fm6 { left: 32rem; top: 6rem; }
+    .fm7 { left: 17rem; top: 16rem; }
+    .fm8 { left: 0; top: 10rem; }
+    .fm9 { left: 15rem; top: 35rem; }
+    .fm10 { left: 17rem; top: 0; }
+    .fm11 { left: 0; top: 70rem; }
+    .fm12 { left: 41.5rem; top: 10rem; }
+    .fm13 { left: 0; top: 35rem; }
+}
+
+@media (min-width: 64rem) {
+
+    .decoracion-desktop {
+        display: block;
+    }
+
+    .decoracion-movil {
+        display: none;
+    }
+
+    .fd1 { left: 24rem; top: 10rem; }
+    .fd2 { left: 0; top: 35rem;}
+    .fd3 {left: 0; top: 6rem; }
+}
+
+@media (min-width: 90rem) {
+    .decoracion-desktop {
+        display: block;
+    }
+
+    .decoracion-movil {
+        display: none;
+    }
+
+    .fd1 { left: 48rem; top: 10rem; }
+    .fd2 { left: 0; top: 42rem;}
+    .fd3 {left: 0; top: 6rem; }
+}
