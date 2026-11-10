@@ -176,19 +176,19 @@
 
 
 .fm1 { left: 0; top: 50rem; }
-.fm2 { left: 15rem; top: 65rem; }
+.fm2 { left: 11rem; top: 65rem; }
 .fm3 { left: 0; top: 60rem; }
-.fm4 { left: 15rem; top: 80rem; }
+.fm4 { left: 11rem; top: 80rem; }
 .fm5 { left: 0; top: 70rem; }
-.fm6 { left: 15rem; top: 6rem; }
-.fm7 { left: 14rem; top: 21rem; }
+.fm6 { left: 11rem; top: 6rem; }
+.fm7 { left: 11rem; top: 21rem; }
 .fm8 { left: 0; top: 12rem; }
-.fm9 { left: 14.5rem; top: 35rem; }
+.fm9 { left: 11rem; top: 35rem; }
 .fm10 { left: 0; top: 35rem; }
-.fm11 { left: 17rem; top: 95rem; }
-.fm12 { left: 17rem; top: 110rem; }
+.fm11 { left: 11rem; top: 95rem; }
+.fm12 { left: 11rem; top: 110rem; }
 .fm13 { left: 0.1rem; top: 101rem; }
-.fm14 { left: 17rem; top: 125rem; }
+.fm14 { left: 11rem; top: 125rem; }
 
 
 @media (min-width: 48rem) {
