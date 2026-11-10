@@ -1,1 +1,59 @@
-# amac-web
+# AMAC
+
+Bolsa de trabajo para personas mayores de la Asociación de Mayores A.C.
+
+## Integrantes
+
+- **Andrea Díaz de León Arrambide**: creó el repositorio, las variables globales y los archivos CSS base, el header y el footer, la página de mis solicitudes y la página de error 404.
+- **Roberta Montalvo**: página de inicio (index) y página de vacantes, con sus estilos (`index.css` y `vacantes.css`).
+- **María José Paz**: inicio de sesión, registro de candidato y de su experiencia, registro de empresa con su imagen, y páginas de registro pendiente y confirmado, con sus estilos (`login.css`).
+- **Jesica Galeana**: páginas de la empresa (vacantes, sin vacantes, solicitudes recibidas, solicitudes por vacante y publicar vacante) y sus componentes en `componentes.css` y `layout.css`.
+
+## Paleta de colores
+
+- `--color-azul-marino`: #202945
+- `--color-coral`: #FF815C
+- `--color-gris`: #A8A8A8
+- `--color-blanco`: #FFFFFF
+- `--color-azul-claro`: #CAE4EF
+- `--color-amarillo-claro`: #FDDAAD
+- `--color-gris-claro`: #F1EFEE
+
+## Tipografía
+
+- `--fuente-base`: "Atkinson Hyperlegible", system-ui, sans-serif
+- `--texto-base`: 1.25rem (1.5rem desde 90rem)
+- `--texto-h2`: 1.75rem (2rem desde 90rem)
+- `--texto-h1`: 2.25rem (2.5rem desde 90rem)
+
+## Componentes reutilizables
+
+Estructura (`layout.css`)
+
+- `.header`, `.barra`, `.logo`, `.hamburguesa` y `.menu`: encabezado fijo con menú para celular y desktop.
+- `.pie`, `.pie-contenido`, `.pie-titulo`, `.pie-lista` y `.pie-enlace`: pie de página.
+- `.principal` y `.contenedor`: ancho máximo y márgenes del contenido.
+- `.encabezado-pagina` y `.titulo-pagina`: título de cada página.
+- `.encabezado-pagina-accion`: título con un botón o una flecha a un lado.
+- `.grid`: lista de tarjetas.
+- `.herramientas` y `.filtros`: zona del buscador y los filtros.
+
+Componentes (`componentes.css`)
+
+- `.btn` con `.btn-primario`, `.btn-secundario`, `.btn-terciario`, `.btn-contacto` y `.btn-auto`: botones.
+- `.botones`: fila de botones.
+- `.tarjeta`, `.tarjeta-contenido`, `.tarjeta-acciones` y `.tarjeta-seccion`: tarjetas de vacantes y solicitudes.
+- `.estado` con `.estado-pendiente`, `.estado-aceptada`, `.estado-rechazada`, `.estado-revision`, `.estado-cancelada`, `.estado-activa`, `.estado-pausada` y `.estado-cerrada`: etiquetas de estado.
+- `.aviso` y `.aviso-info`: mensajes amarillos y azules.
+- `.desplegable`: lista que se abre con una flecha.
+- `.decision`, `.ocultar-si-decide`, `.mostrar-si-acepta` y `.mostrar-si-rechaza`: botones de aceptar y rechazar sin JavaScript.
+- `.campos`, `.campo`, `.campo-completo`, `.opciones` y `.opcion`: formularios.
+- `.buscador`: barra de búsqueda.
+- `.vacante` y `.vacante-ampliada`: vacante en lista y en detalle.
+- `.etiqueta`: etiqueta de categoría.
+- `.icono` e `.ilustracion`: íconos e imágenes centradas.
+- `.pagina-error`: página 404.
+
+## Capturas
+
+### index.html en celular
