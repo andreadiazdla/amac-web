@@ -63,7 +63,7 @@ https://amac-web-eta.vercel.app
 
 ## Capturas
 
-![Lighthouse-solicitudes-vacantes-mobile](capturas/Lighthouse-solicitudes-vacantes-mobile.png)
+![Lighthouse-.solicitudes-vacantes-mobile](capturas/Lighthouse-.solicitudes-vacantes-mobile.png)
 ![Lighthouse-solicitudes-vacantes-desktop](capturas/Lighthouse-solicitudes-vacantes-desktop.png)
 ![Lighthouse-empresa-sin-vacantes-desktop](capturas/Lighthouse-empresa-sin-vacantes-desktop.png)
 ![Lighthouse-empresa-sin-vacantes-mobile](capturas/Lighthouse-empresa-sin-vacantes-mobile.png)
