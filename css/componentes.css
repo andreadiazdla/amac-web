@@ -89,15 +89,18 @@
 
 /*<span class="estado estado-pendiente">Estado</span>*/
 
-.estado-pendiente {
+.estado-pendiente,
+.estado-pausada {
     background-color: var(--color-amarillo-claro);
 }
 
-.estado-aceptada {
+.estado-aceptada,
+.estado-activa {
     background-color: var(--color-azul-claro);
 }
 
-.estado-rechazada {
+.estado-rechazada,
+.estado-cerrada {
     background-color: var(--color-coral);
 }
 
@@ -171,7 +174,7 @@
 
     /* El texto del botón de contacto solo se ve en desktop */
     .texto-contacto {
-        display: var(--color-azul-marino);
+        display: inline;
     }
 }
 
@@ -319,4 +322,168 @@
 .error-contenido .btn {
     width: auto;
     min-width: 13.125rem;
+}
+
+/* PÁGINAS DE EMPRESA */
+
+.btn-auto {
+    width: auto;
+}
+
+/* Fila de botones */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--espacio-m);
+}
+
+/* Parte de la tarjeta que ocupa todo el ancho */
+.tarjeta-seccion {
+    width: 100%;
+}
+
+@media (min-width: 48rem) {
+    .tarjeta {
+        flex-wrap: wrap;
+    }
+}
+
+/* Aviso amarillo, con aviso-info es azul */
+.aviso {
+    padding: var(--espacio-m);
+    border-radius: var(--radio);
+    background-color: var(--color-amarillo-claro);
+}
+
+.aviso-info {
+    background-color: var(--color-azul-claro);
+}
+
+.ilustracion {
+    display: block;
+    margin: var(--espacio-l) auto;
+}
+
+/* Lista que se abre con la flecha */
+.desplegable {
+    position: relative;
+}
+
+.desplegable summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.desplegable-lista {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    min-width: 16rem;
+    padding: var(--espacio-s);
+    background-color: var(--color-blanco);
+    border: 1.5px solid var(--color-gris);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.desplegable-lista a {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    padding: 0 var(--espacio-s);
+    color: var(--color-azul-marino);
+    text-decoration: none;
+}
+
+/* Aceptar / Rechazar: los botones son labels de radios escondidos */
+.decision {
+    position: absolute;
+    opacity: 0;
+}
+
+.decision-aceptar:not(:checked) ~ .mostrar-si-acepta,
+.decision-aceptar:not(:checked) ~ * .mostrar-si-acepta,
+.decision-rechazar:not(:checked) ~ .mostrar-si-rechaza,
+.decision-rechazar:not(:checked) ~ * .mostrar-si-rechaza,
+.decision:checked ~ .ocultar-si-decide,
+.decision:checked ~ * .ocultar-si-decide {
+    display: none;
+}
+
+.decision-aceptar:focus-visible ~ .botones .btn-primario,
+.decision-rechazar:focus-visible ~ .botones .btn-secundario {
+    outline: 3px solid var(--color-coral);
+    outline-offset: 2px;
+}
+
+/* Formulario */
+.campos {
+    display: grid;
+    gap: var(--espacio-m);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-s);
+}
+
+.campo label,
+.opciones legend {
+    font-weight: 700;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    min-height: 3.5rem;
+    padding: var(--espacio-s) var(--espacio-m);
+    border: 1.5px solid var(--color-azul-marino);
+    border-radius: var(--radio);
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-m);
+    border: none;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-s);
+    min-height: 3rem;
+}
+
+.opcion input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* El teléfono solo aparece si eligen "Teléfono" */
+.campo-telefono {
+    display: none;
+}
+
+.vacante-ampliada:has(#medioTelefono:checked) .campo-telefono {
+    display: flex;
+}
+
+@media (min-width: 48rem) {
+    .campos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .campo-completo {
+        grid-column: 1 / -1;
+    }
 }
