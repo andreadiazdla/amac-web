@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la vacante | AMAC</title>
+    <meta name="description" content="Publica o edita una vacante de tu empresa en AMAC.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                <img class="icono" src="img/icono-contacto.png" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <a href="empresa-vacantes.html" class="logo">
+                <picture>
+                    <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                    <img src="img/logo-movil.png" alt="AMAC, ir al inicio">
+                </picture>
+            </a>
+
+            <button class="hamburguesa" id="btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+        </div>
+
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="empresa-vacantes.html" aria-current="page">Vacantes</a>
+            <a href="solicitudes-recibidas.html">Solicitudes</a>
+            <a href="#">Mi perfil</a>
+            </nav>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <div class="encabezado-pagina">
+                <h1 class="titulo-pagina">Información vacante</h1>
+                <p>Todos los datos son obligatorios para la publicación de la vacante.</p>
+            </div>
+
+            <form action="empresa-vacantes.html" method="get">
+
+                <section class="vacante-ampliada">
+                    <h2>Datos de la vacante</h2>
+                    <div class="campos">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Recepcionista" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sueldo">Sueldo</label>
+                            <input type="number" id="sueldo" name="sueldo" placeholder="Ej. 8000" min="1" required>
+                    </div>
+                    <div class="campo">
+                        <label for="ubicacion">Ubicación de la vacante</label>
+                            <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Monterrey, Nuevo León" required>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria">Categoría</label>
+                            <input type="text" id="categoria" name="categoria" placeholder="Ej. Atención al cliente" required>
+                    </div>
+                    <div class="campo">
+                        <label for="horarioEntrada">Horario entrada</label>
+                            <input type="time" id="horarioEntrada" name="horarioEntrada" required>
+                    </div>
+                    <div class="campo">
+                        <label for="horarioSalida">Horario salida</label>
+                            <input type="time" id="horarioSalida" name="horarioSalida" required>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe las actividades del puesto" required></textarea>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="requisitos">Requisitos</label>
+                        <textarea id="requisitos" name="requisitos" rows="2" placeholder="Ej. Secundaria terminada" required></textarea>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label for="prestaciones">Prestaciones</label>
+                        <textarea id="prestaciones" name="prestaciones" rows="2" placeholder="Ej. Prestaciones de ley" required></textarea>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="vacante-ampliada">
+                    <h2>Solicitudes</h2>
+                    <fieldset class="opciones">
+                        <legend>Medio de postulación</legend>
+                        <label class="opcion"><input type="radio" name="medio" value="plataforma" id="medioPlataforma" required> Plataforma</label>
+                        <label class="opcion"><input type="radio" name="medio" value="telefono" id="medioTelefono"> Teléfono</label>
+                    </fieldset>
+                    <!-- este campo aparece solo si eligen "Teléfono" -->
+                    <div class="campo campo-telefono">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 81 1234 5678">
+                    </div>
+                </section>
+
+                <section class="vacante-ampliada">
+                    <fieldset class="opciones">
+                        <legend><h2>Estado de la vacante</h2></legend>
+                        <label class="opcion"><input type="radio" name="estado" value="activa" required> Activa</label>
+                        <label class="opcion"><input type="radio" name="estado" value="pausada"> Pausada</label>
+                        <label class="opcion"><input type="radio" name="estado" value="cerrada"> Cerrada</label>
+                    </fieldset>
+                </section>
+
+                <div class="botones">
+                    <button class="btn btn-primario btn-auto" type="submit">Publicar vacante</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+<footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-label="Secciones del pie de página">
+                 <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Vacantes</a></li>
+                    <li><a class="pie-enlace" href="solicitudes-recibidas.html">Solicitudes</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+            btn.setAttribute("aria-expanded", menu.classList.contains("abierto"));
+        });
+    </script>
+
+</body>
+
+</html>

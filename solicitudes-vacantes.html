@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitudes de Recepcionista | AMAC</title>
+    <meta name="description" content="Solicitudes que recibió la vacante de Recepcionista.">
+     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                <img class="icono" src="img/icono-contacto.png" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <a href="empresa-vacantes.html" class="logo">
+                <picture>
+                    <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                    <img src="img/logo-movil.png" alt="AMAC, ir al inicio">
+                </picture>
+            </a>
+
+            <button class="hamburguesa" id="btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+        </div>
+
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="empresa-vacantes.html">Vacantes</a>
+            <a href="solicitudes-recibidas.html" aria-current="page">Solicitudes</a>
+            <a href="#">Mi perfil</a>
+            </nav>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <div class="encabezado-pagina encabezado-pagina-accion">
+                <h1 class="titulo-pagina">Solicitudes de la vacante Recepcionista</h1>
+                <details class="desplegable">
+                    <summary aria-label="Elegir vacante">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                    </summary>
+                    <div class="desplegable-lista">
+                        <a href="solicitudes-recibidas.html">Todas las vacantes</a>
+                        <a href="solicitudes-vacantes.html" aria-current="page">Recepcionista</a>
+                    </div>
+                </details>
+            </div>
+
+            <div class="grid">
+
+                <article class="tarjeta">
+                    <input class="decision decision-aceptar" type="radio" name="decisionMaria" id="aceptarMaria">
+                    <input class="decision decision-rechazar" type="radio" name="decisionMaria" id="rechazarMaria">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Recepcionista</h2>
+                        <p>
+                            <strong>Nombre del postulante:</strong>
+                            María Elena Garza
+                        </p>
+                        <p>
+                            <strong>Edad:</strong>
+                            67 años
+                        </p>
+                        <p>
+                            <strong>Lugar de residencia:</strong>
+                            Monterrey, Nuevo León
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-pendiente ocultar-si-decide">Pendiente</span>
+                        <span class="estado estado-aceptada mostrar-si-acepta">Aceptado</span>
+                        <span class="estado estado-rechazada mostrar-si-rechaza">Rechazado</span>
+                        <button class="btn btn-primario" type="button">Ver perfil</button>
+                    </div>
+                    <div class="tarjeta-seccion">
+                        <p><strong>Experiencia:</strong></p>
+                            <p><strong>Recepcionista - Hotel Ancira (2005 - 2018)</strong></p>
+                            <p>Atención a huéspedes, reservaciones y manejo del conmutador.</p>
+                        </div>
+                    <div class="botones tarjeta-seccion ocultar-si-decide">
+                        <label class="btn btn-primario" for="aceptarMaria">Aceptar</label>
+                        <label class="btn btn-secundario" for="rechazarMaria">Rechazar</label>
+                        </div>
+                    <p class="aviso aviso-info tarjeta-seccion mostrar-si-acepta">Aceptaste a María Elena Garza.</p>
+                    <p class="aviso tarjeta-seccion mostrar-si-rechaza">Rechazaste la solicitud de María Elena Garza.</p>
+                    </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Recepcionista</h2>
+                        <p>
+                            <strong>Nombre del postulante:</strong>
+                            José Luis Treviño
+                        </p>
+                        <p>
+                            <strong>Edad:</strong>
+                            71 años
+                        </p>
+                        <p>
+                            <strong>Lugar de residencia:</strong>
+                            Guadalupe, Nuevo León
+                        </p>
+                        <p>
+                            <strong>Fecha de cambio:</strong>
+                            22/10/2026
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-rechazada">Rechazado</span>
+                        <button class="btn btn-primario" type="button">Ver perfil</button>
+                    </div>
+                    <div class="tarjeta-seccion">
+                        <p><strong>Experiencia:</strong></p>
+                            <p><strong>Encargado de tienda - Abarrotes Treviño (1990 - 2020)</strong></p>
+                            <p>Administración del negocio familiar, inventarios y atención a clientes.</p>
+                        </div>
+                    </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Recepcionista</h2>
+                        <p>
+                            <strong>Nombre del postulante:</strong>
+                            Carmen López
+                        </p>
+                        <p>
+                            <strong>Edad:</strong>
+                            66 años
+                        </p>
+                        <p>
+                            <strong>Lugar de residencia:</strong>
+                            Monterrey, Nuevo León
+                        </p>
+                        <p>
+                            <strong>Fecha de cambio:</strong>
+                            18/10/2026
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-aceptada">Aceptado</span>
+                        <button class="btn btn-primario" type="button">Ver perfil</button>
+                    </div>
+                    <div class="tarjeta-seccion">
+                        <p><strong>Experiencia:</strong></p>
+                            <p><strong>Auxiliar contable - Despacho Garza (1995 - 2020)</strong></p>
+                            <p>Registro de facturas, conciliaciones bancarias y archivo de documentos.</p>
+                        </div>
+                    </article>
+
+            </div>
+
+        </div>
+    </main>
+
+<footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-label="Secciones del pie de página">
+                 <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Vacantes</a></li>
+                    <li><a class="pie-enlace" href="solicitudes-recibidas.html">Solicitudes</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+            btn.setAttribute("aria-expanded", menu.classList.contains("abierto"));
+        });
+    </script>
+
+</body>
+
+</html>

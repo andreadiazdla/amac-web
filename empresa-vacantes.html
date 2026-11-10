@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacantes | AMAC</title>
+    <meta name="description" content="Panel con las vacantes publicadas por tu empresa en AMAC.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="header">
+        <div class="barra">
+            <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                <img class="icono" src="img/icono-contacto.png" alt="">
+                <span class="texto-contacto">Contáctanos</span>
+            </a>
+
+            <a href="empresa-vacantes.html" class="logo">
+                <picture>
+                    <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                    <img src="img/logo-movil.png" alt="AMAC, ir al inicio">
+                </picture>
+            </a>
+
+            <button class="hamburguesa" id="btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+        </div>
+
+        <nav class="menu" id="menu" aria-label="Navegación principal">
+            <a href="empresa-vacantes.html" aria-current="page">Vacantes</a>
+            <a href="solicitudes-recibidas.html">Solicitudes</a>
+            <a href="#">Mi perfil</a>
+            </nav>
+    </header>
+
+    <main id="principal" class="principal">
+        <div class="contenedor">
+            <div class="encabezado-pagina encabezado-pagina-accion">
+                <div>
+                    <h1 class="titulo-pagina">Vacantes</h1>
+                    <p>Consulta todas tus vacantes.</p>
+                </div>
+                <a class="btn btn-primario btn-auto" href="publicar-vacante.html">Publicar nueva vacante</a>
+            </div>
+
+            <div class="grid">
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Recepcionista</h2>
+                        <p>
+                            <strong>Fecha de publicación:</strong>
+                            12/10/2026
+                        </p>
+                        <p>
+                            <strong>Número de solicitudes:</strong>
+                            3
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-activa">Activa</span>
+                        <a class="btn btn-primario" href="solicitudes-vacantes.html">Ver solicitudes</a>
+                        <a class="btn btn-terciario" href="publicar-vacante.html">Editar vacante</a>
+                        </div>
+                    </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Auxiliar de almacén</h2>
+                        <p>
+                            <strong>Fecha de publicación:</strong>
+                            20/10/2026
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-pausada">Pausada</span>
+                        <a class="btn btn-terciario" href="publicar-vacante.html">Editar vacante</a>
+                        </div>
+                    <p class="aviso tarjeta-seccion">Vacante sin aplicaciones.</p>
+                    </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h2 class="tarjeta-titulo">Asesor de ventas</h2>
+                        <p>
+                            <strong>Fecha de publicación:</strong>
+                            02/09/2026
+                        </p>
+                        <p>
+                            <strong>Número de solicitudes:</strong>
+                            1
+                        </p>
+                        </div>
+                    <div class="tarjeta-acciones">
+                        <span class="estado estado-cerrada">Cerrada</span>
+                        <a class="btn btn-primario" href="solicitudes-recibidas.html">Ver solicitudes</a>
+                        <a class="btn btn-terciario" href="publicar-vacante.html">Editar vacante</a>
+                        </div>
+                    </article>
+
+            </div>
+
+        </div>
+    </main>
+
+<footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+
+            <nav aria-label="Secciones del pie de página">
+                 <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="empresa-vacantes.html">Vacantes</a></li>
+                    <li><a class="pie-enlace" href="solicitudes-recibidas.html">Solicitudes</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
+            </section>
+
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+            btn.setAttribute("aria-expanded", menu.classList.contains("abierto"));
+        });
+    </script>
+
+</body>
+
+</html>
