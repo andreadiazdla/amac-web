@@ -1,0 +1,247 @@
+.principal {
+    max-width: 75rem;
+    margin: var(--espacio-m) auto;
+}
+
+.contenedor {
+    margin: 0 auto;
+    padding:0 var(--espacio-m);
+}
+
+@media (min-width: 48rem){
+    .contenedor {
+        padding: 0 3rem;
+    }
+}
+
+.titulo-pagina{
+    padding-bottom: var(--espacio-m);
+}
+
+.encabezado-pagina {
+    padding: var(--espacio-m) 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-s);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width:100%;
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra);
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacio-s) var(--espacio-m);
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.hamburguesa {
+    min-width: 3rem;
+    min-height: 3rem;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    color: var(--color-azul-marino);
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    padding: 0 var(--espacio-m) var(--espacio-m);
+}
+
+.menu.abierto {
+    display: flex;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 3rem;
+    color: var(--color-azul-marino);
+    text-decoration: none;
+    padding: var(--espacio-s)
+}
+
+.menu a:hover{
+    border-radius: var(--radio);
+    font-weight: 700;
+}
+
+@media (min-width: 48rem) {
+    .header {
+        display: flex;
+        align-items: center;
+        gap: var(--espacio-m);
+        padding: var(--espacio-s) var(--espacio-m);
+    }
+
+    .barra {
+        display: contents;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .menu {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .btn-contacto {
+        order: 3;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+
+    .texto-contacto {
+        display: inline;
+    }
+}
+
+.pie {
+    background-color: var(--color-azul-marino);
+    color: var(--color-blanco);
+    padding: var(--espacio-m);
+}
+
+.pie-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+}
+
+.pie-titulo {
+    margin-bottom: var(--espacio-s);
+}
+
+.pie-texto {
+    margin-bottom: var(--espacio-s);
+}
+
+.pie-lista {
+    list-style: none;
+}
+
+.pie-enlace {
+    display: flex;
+    align-items: center;
+    min-height: 3rem; /* 48px */
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.pie-enlace:hover,
+.pie-enlace:focus {
+    font-weight: 700;
+    color: var(--color-coral)
+}
+
+.pie-legal {
+    padding-top: var(--espacio-m);
+    border-top: 1px solid var(--color-gris);
+}
+
+@media (min-width: 48rem) {
+    .pie-contenido {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: var(--espacio-m);
+    }
+
+    .pie-legal {
+        grid-column: 1 / -1;
+    }
+}
+
+/* buscador y filtros */
+
+.herramientas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: calc(100% - 2rem);
+    max-width: 75rem;
+    margin: var(--espacio-s) auto 0;
+    padding-top: var(--espacio-m);
+    padding-bottom: var(--espacio-s);
+}
+
+.filtros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espacio-m);
+    width: 100%;
+}
+
+.vacantes {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: var(--espacio-m);
+    width: calc(100% - 1.5rem);
+    max-width: 70rem;
+    margin: var(--espacio-m) auto var(--espacio-l);
+}
+
+@media (min-width: 48rem) {
+    .herramientas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .filtros {
+        flex: 1 1 20rem;
+    }
+
+    .vacantes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+
+    .herramientas {
+        margin-top: var(--espacio-s);
+        flex-direction: row;
+    }
+
+    .filtros {
+        flex: 0 1 25rem;
+    }
+
+    .vacantes {
+        gap: 1.5rem;
+        margin-top: var(--espacio-m);
+    }
+}
