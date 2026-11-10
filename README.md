@@ -58,11 +58,21 @@ Componentes (`componentes.css`)
 ## Video Demo
 https://drive.google.com/file/d/1hcQJlLkcX3JcrBFonZCoWHwkV35dDtyS/view?usp=sharing
 
-##Vercel
+## Vercel
 https://amac-web-eta.vercel.app 
 
 ## Capturas
 
+![Lighthouse-solicitudes-vacantes-mobile](capturas/Lighthouse-solicitudes-vacantes-mobile.png)
+![Lighthouse-solicitudes-vacantes-desktop](capturas/Lighthouse-solicitudes-vacantes-desktop.png)
+![Lighthouse-empresa-sin-vacantes-desktop](capturas/Lighthouse-empresa-sin-vacantes-desktop.png)
+![Lighthouse-empresa-sin-vacantes-mobile](capturas/Lighthouse-empresa-sin-vacantes-mobile.png)
+![Lighthouse-empresa-vacantes-desktop](capturas/Lighthouse-empresa-vacantes-desktop.png)
+![Lighthouse-empresa-vacantes-mobile](capturas/Lighthouse-empresa-vacantes-mobile.png)
+![Lighthouse-publicar-vacante-desktop](capturas/Lighthouse-publicar-vacante-desktop.png)
+![Lighthouse-publicar-vacante-mobile](capturas/Lighthouse-publicar-vacante-mobile.png)
+![Lighthouse-solicitudes-recibidas-mobile](capturas/Lighthouse-solicitudes-recibidas-mobile.png)
+![Lighthouse-solicitudes-recibidas-desktop](capturas/Lighthouse-solicitudes-recibidas-desktop.png)
 ![Experiencia_lighthouse_dektop](capturas/Experiencia_lighthouse_desktop.png)
 ![crear_cuenta_empresa_lighthouse_fdesktop](capturas/crear_cuenta_empresa_lighthouse_fdesktop.png)
 ![crear_cuenta_lighthouse_movil](capturas/crear_cuenta_lighthouse_movil.png)
