@@ -5,8 +5,8 @@ Bolsa de trabajo para personas mayores de la Asociación de Mayores A.C.
 ## Integrantes
 
 - **Andrea Díaz de León Arrambide**: creó el repositorio, las variables globales y los archivos CSS base, el header y el footer, la página de mis solicitudes y la página de error 404.
-- **Roberta Montalvo**: página de inicio (index) y página de vacantes, con sus estilos (`index.css` y `vacantes.css`).
-- **María José Paz**: inicio de sesión, registro de candidato y de su experiencia, registro de empresa con su imagen, y páginas de registro pendiente y confirmado, con sus estilos (`login.css`).
+- **Roberta Montalvo**: página de inicio (index) y página de vacantes, con sus estilos.
+- **María José Paz**: inicio de sesión, registro de candidato y de su experiencia, registro de empresa con su imagen, y páginas de registro pendiente y confirmado, con sus estilos.
 - **Jesica Galeana**: páginas de la empresa (vacantes, sin vacantes, solicitudes recibidas, solicitudes por vacante y publicar vacante) y sus componentes en `componentes.css` y `layout.css`.
 
 ## Paleta de colores
@@ -54,6 +54,45 @@ Componentes (`componentes.css`)
 - `.icono` e `.ilustracion`: íconos e imágenes centradas.
 - `.pagina-error`: página 404.
 
+
+## Video Demo
+https://drive.google.com/file/d/1hcQJlLkcX3JcrBFonZCoWHwkV35dDtyS/view?usp=sharing
+
+##Vercel
+https://amac-web-eta.vercel.app 
+
 ## Capturas
 
+![Experiencia_lighthouse_dektop](capturas/Experiencia_lighthouse_desktop.png)
+![crear_cuenta_empresa_lighthouse_fdesktop](capturas/crear_cuenta_empresa_lighthouse_fdesktop.png)
+![crear_cuenta_lighthouse_movil](capturas/crear_cuenta_lighthouse_movil.png)
+![cuenta_creada_lighthouse_desktop](capturas/cuenta_creada_lighthouse_desktop.png)
+![cuenta_empresa_lighthouse_movil](capturas/cuenta_empresa_lighthouse_movil.png)
+![cuenta_registrada_lighthouse_movil](capturas/cuenta_registrada_lighthouse_movil.png)
+![experiencia_lighthouse_movil](capturas/experiencia_lighthouse_movil.png)
+![imagen_empresa_lighthouse_desktop](capturas/imagen_empresa_lighthouse_desktop.png)
+![imagen_empresa_lighthouse_movil](capturas/imagen_empresa_lighthouse_movil.png)
+![inicio_sesion_desktop_lighthouse](capturas/inicio_sesion_desktop_lighthouse.png)
+![inicio_sesion_lighthouse_movil](capturas/inicio_sesion_lighthouse_movil.png)
+![lighthouse-index-movil](capturas/lighthouse-index-movil.png)
+![lighthouse-index-desktop](capturas/lighthouse-index-desktop.png)
+![lighthouse-vacantes-movil](capturas/lighthouse-vacantes-movil.png)
+![lighthouse-vacantes-desktop](capturas/lighthouse-vacantes-desktop.png)
+![lighthouse-vacantes-movil](capturas/lighthouse-vacantes-movil.png)
+![lighthouse-vacantes-desktop](capturas/lighthouse-vacantes-desktop.png)
+![mis-solicitudes(desktop-analisis)](capturas/mis-solicitudes(desktop-analisis).png)
+![mis-solicitudes(movil-analisis)](capturas/mis-solicitudes(movil-analisis).png)
+
+![recibimos_tu_registro_lighthouse_desktop](capturas/recibimos_tu_registro_lighthouse_desktop.png)
+![registro_lighthouse_desktop](capturas/registro_lighthouse_desktop.png)
+![registro_recibido_lighthouse_movil](capturas/registro_recibido_lighthouse_movil.png)
+
 ### index.html en celular
+![index-movil](capturas/index-movil.png)
+
+### index.html en desktop
+![index-desktop](capturas/index-desktop.png)
+
+
+### index.html en celular
+![index-desktop](capturas/index-desktop.png)
