@@ -263,3 +263,442 @@
         margin-top: var(--espacio-m);
     }
 }
+
+/* FONDOS DECORATIVOS (inicio y detalle de vacante) */
+
+.decoracion {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.decoracion img {
+    position: absolute;
+    max-width: none;
+}
+
+.decoracion-desktop {
+    display: none;
+}
+
+.decoracion-movil {
+    display: block;
+}
+
+@media (min-width: 64rem) {
+    .decoracion-desktop {
+        display: block;
+    }
+
+    .decoracion-movil {
+        display: none;
+    }
+}
+
+/* Fondo de la página de inicio */
+
+.inicio .fm1 {
+    left: 0; top: 50rem;
+}
+
+.inicio .fm2 {
+    left: 11rem; top: 65rem;
+}
+
+.inicio .fm3 {
+    left: 0; top: 60rem;
+}
+
+.inicio .fm4 {
+    left: 11rem; top: 80rem;
+}
+
+.inicio .fm5 {
+    left: 0; top: 70rem;
+}
+
+.inicio .fm6 {
+    left: 11rem; top: 6rem;
+}
+
+.inicio .fm7 {
+    left: 11rem; top: 21rem;
+}
+
+.inicio .fm8 {
+    left: 0; top: 12rem;
+}
+
+.inicio .fm9 {
+    left: 11rem; top: 35rem;
+}
+
+.inicio .fm10 {
+    left: 0; top: 35rem;
+}
+
+.inicio .fm11 {
+    left: 11rem; top: 95rem;
+}
+
+.inicio .fm12 {
+    left: 11rem; top: 110rem;
+}
+
+.inicio .fm13 {
+    left: 0.1rem; top: 101rem;
+}
+
+.inicio .fm14 {
+    left: 11rem; top: 125rem;
+}
+
+@media (min-width: 48rem) {
+    .inicio .fm1 {
+        left: 41rem; top: 45rem;
+    }
+
+    .inicio .fm2 {
+        left: 41rem; top: 65rem;
+    }
+
+    .inicio .fm3 {
+        left: 0; top: 60rem;
+    }
+
+    .inicio .fm4 {
+        left: 20rem; top: 47rem;
+    }
+
+    .inicio .fm5 {
+        left: 20rem; top: 67rem;
+    }
+
+    .inicio .fm6 {
+        left: 32rem; top: 6rem;
+    }
+
+    .inicio .fm7 {
+        left: 17rem; top: 16rem;
+    }
+
+    .inicio .fm8 {
+        left: 0; top: 10rem;
+    }
+
+    .inicio .fm9 {
+        left: 15rem; top: 35rem;
+    }
+
+    .inicio .fm10 {
+        left: 17rem; top: 0;
+    }
+
+    .inicio .fm11 {
+        left: 0; top: 70rem;
+    }
+
+    .inicio .fm12 {
+        left: 41.5rem; top: 10rem;
+    }
+
+    .inicio .fm13 {
+        left: 0; top: 35rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .inicio .fd1 {
+        left: 24rem; top: 10rem;
+    }
+
+    .inicio .fd2 {
+        left: 0; top: 35rem;
+    }
+
+    .inicio .fd3 {
+        left: 0; top: 6rem;
+    }
+}
+
+@media (min-width: 90rem) {
+    .inicio .fd1 {
+        left: 48rem; top: 10rem;
+    }
+
+    .inicio .fd2 {
+        left: 0; top: 42rem;
+    }
+
+    .inicio .fd3 {
+        left: 0; top: 6rem;
+    }
+}
+
+/* Fondo del detalle de vacante */
+
+.detalle-vacante main {
+    position: relative;
+    z-index: 1;
+}
+
+.detalle-vacante .fm1 {
+    left: 0; top: 45rem;
+}
+
+.detalle-vacante .fm2 {
+    left: 11rem; top: 65rem;
+}
+
+.detalle-vacante .fm3 {
+    left: 0; top: 55rem;
+}
+
+.detalle-vacante .fm5 {
+    left: 0; top: 70rem;
+}
+
+.detalle-vacante .fm7 {
+    left: 11rem; top: 21rem;
+}
+
+.detalle-vacante .fm8 {
+    left: 0; top: 12rem;
+}
+
+.detalle-vacante .fm9 {
+    left: 11rem; top: 35rem;
+}
+
+.detalle-vacante .fm10 {
+    left: 0; top: 35rem;
+}
+
+@media (min-width: 48rem) {
+    .detalle-vacante .fm1 {
+        left: 38rem; top: 45rem;
+    }
+
+    .detalle-vacante .fm2 {
+        left: 41rem; top: 65rem;
+    }
+
+    .detalle-vacante .fm3 {
+        left: 0; top: 60rem;
+    }
+
+    .detalle-vacante .fm5 {
+        left: 20rem; top: 68rem;
+    }
+
+    .detalle-vacante .fm7 {
+        left: 39rem; top: 16rem;
+    }
+
+    .detalle-vacante .fm8 {
+        left: 0; top: 22rem;
+    }
+
+    .detalle-vacante .fm9 {
+        left: 6rem; top: 35rem;
+    }
+
+    .detalle-vacante .fm10 {
+        left: 17rem; top: 5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .detalle-vacante .fd1 {
+        left: 0; top: 0;
+    }
+
+    .detalle-vacante .fd2 {
+        left: 23rem; top: 37rem;
+    }
+
+    .detalle-vacante .fd3 {
+        left: 43.5rem; top: 0;
+    }
+}
+
+@media (min-width: 90rem) {
+    .detalle-vacante .fd1 {
+        left: 0; top: 20rem;
+    }
+
+    .detalle-vacante .fd2 {
+        left: 49.5rem; top: 40rem;
+    }
+
+    .detalle-vacante .fd3 {
+        left: 69rem; top: 10rem;
+    }
+}
+
+/* INICIO DE SESIÓN Y REGISTRO */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.panel-marca {
+    position: relative;
+    overflow: hidden;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--espacio-m);
+    padding: 1.5rem;
+    background-color: var(--color-azul-marino);
+    color: var(--color-blanco);
+}
+
+.panel-marca::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: -8rem;
+    right: -7rem;
+    width: 20rem;
+    height: 20rem;
+    border: 3.5rem solid var(--color-azul-marino-claro);
+    border-radius: 50%;
+}
+
+.panel-marca-logo-enlace {
+    position: relative;
+    display: none;
+    width: 9.5rem;
+    padding: var(--espacio-s) 0;
+}
+
+.panel-marca-logo {
+    display: block;
+}
+
+.panel-marca-texto {
+    position: relative;
+}
+
+.panel-marca-etiqueta {
+    margin-bottom: var(--espacio-s);
+    font-weight: 700;
+    color: var(--color-amarillo-claro);
+}
+
+.panel-marca-lema {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.panel-marca-descripcion {
+    margin-top: var(--espacio-m);
+}
+
+.panel-marca-boton {
+    position: relative;
+}
+
+.panel-formulario {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    padding: var(--espacio-m) 1.5rem 2.5rem;
+}
+
+.panel-formulario .contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-l);
+    width: 100%;
+    max-width: 34rem;
+    padding: 0;
+}
+
+.panel-formulario-centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-formulario-decorado::before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: -14rem;
+    width: 24rem;
+    height: 24rem;
+    border: 4rem solid var(--color-gris-claro);
+    border-radius: 50%;
+}
+
+@media (min-width: 48rem) {
+    .login {
+        padding-top: 0;
+    }
+
+    .login .header {
+        display: none;
+    }
+
+    .panel-marca {
+        order: 0;
+        gap: var(--espacio-l);
+        padding: var(--espacio-l);
+    }
+
+    .panel-marca::before {
+        top: -9rem;
+        right: -6rem;
+        width: 26rem;
+        height: 26rem;
+        border-width: 4.5rem;
+    }
+
+    .panel-marca-logo-enlace {
+        display: block;
+        width: 12rem;
+    }
+
+    .panel-marca-lema {
+        font-size: clamp(2.5rem, 7vw, 3.75rem);
+    }
+
+    .panel-formulario {
+        padding: 3rem var(--espacio-l);
+    }
+}
+
+@media (min-width: 64rem) {
+    .login {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+    }
+
+    .panel-marca {
+        position: sticky;
+        top: 0;
+        align-self: start;
+        justify-content: center;
+        height: 100vh;
+        padding: 4.5rem 2.5rem 2.5rem;
+    }
+
+    .panel-marca-logo-enlace {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+
+    .panel-formulario {
+        padding: 3rem 2.5rem;
+    }
+}
