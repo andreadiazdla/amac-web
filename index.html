@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buscar empleos | AMAC</title>
+        <meta name="description" content="Vacantes de empleo para personas mayores en AMAC., donde los usuarios pueden ver y postularse a vacantes de empleo.">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/componentes.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+        <div class="decoracion decoracion-desktop" aria-hidden="true">
+            <img class="fd1" src="img/decoracion/fondo-desktop-1.svg" alt="">
+            <img class="fd2" src="img/decoracion/fondo-desktop-2.svg" alt="">
+            <img class="fd3" src="img/decoracion/fondo-desktop-3.svg" alt="">
+        </div>
+
+        <div class="decoracion decoracion-movil" aria-hidden="true">
+            <img class="fm1" src="img/decoracion/fondo-movil-1.svg" alt="">
+            <img class="fm2" src="img/decoracion/fondo-movil-2.svg" alt="">
+            <img class="fm3" src="img/decoracion/fondo-movil-3.svg" alt="">
+            <img class="fm4" src="img/decoracion/fondo-movil-4.svg" alt="">
+            <img class="fm5" src="img/decoracion/fondo-movil-5.svg" alt="">
+            <img class="fm6" src="img/decoracion/fondo-movil-6.svg" alt="">
+            <img class="fm7" src="img/decoracion/fondo-movil-7.svg" alt="">
+            <img class="fm8" src="img/decoracion/fondo-movil-8.svg" alt="">
+            <img class="fm9" src="img/decoracion/fondo-movil-9.svg" alt="">
+            <img class="fm10" src="img/decoracion/fondo-movil-10.svg" alt="">
+            <img class="fm11" src="img/decoracion/fondo-movil-11.svg" alt="">
+            <img class="fm12" src="img/decoracion/fondo-movil-12.svg" alt="">
+            <img class="fm13" src="img/decoracion/fondo-movil-13.svg" alt="">
+        </div>
+
+        <header class="header">
+            <div class="barra">
+                <a href="tel:+528100000000" class="btn btn-contacto" aria-label="Contáctanos">
+                    <img class="icono" src="img/icono-contacto.png" alt="">
+                    <span class="texto-contacto">Contáctanos</span>
+                </a>
+        
+                <a href="#" class="logo">
+                    <picture>
+                        <source media="(min-width: 48rem)" srcset="img/logo-amac.png">
+                        <img src="img/logo-movil.png" alt="AMAC">
+                    </picture>
+                </a>
+        
+                <button class="hamburguesa" id="btn" aria-label="Abrir menú">☰</button>
+            </div>
+        
+            <nav class="menu" id="menu">
+                <a href="index.html">Buscar empleos</a>
+                <a href="mis-solicitudes.html">Mis solicitudes</a>
+                <a href="#">Mi perfil</a>
+            </nav>
+        </header>
+
+
+        <div class="herramientas">
+            <form
+                class="buscador"
+                action="index.html"
+                method="get"
+                role="search"
+            >
+
+                <input
+                    id="palabras-clave"
+                    name="busqueda"
+                    type="search"
+                    placeholder="Palabras clave..."
+                >
+
+                <span class="separador" aria-hidden="true"></span>
+
+                <button
+                    class="btn btn-primario buscar-boton"
+                    type="submit"
+                    aria-label="Buscar"
+                >
+                    <span>Buscar</span>
+                    <img
+                        src="img/buscar-blanco.svg"
+                        alt=""
+                        width="24"
+                        height="25"
+                    >
+                </button>
+            </form>
+
+                <div class="filtros" role="group" aria-label="Filtros de vacantes">
+                    <button class="btn btn-primario" type="button">
+                        <img src="img/horarios.svg" alt="" width="24" height="25">
+                        Horarios
+                    </button>
+
+                    <button class="btn btn-primario" type="button">
+                        <img src="img/categorias.svg" alt="" width="24" height="25">
+                        Categorías
+                    </button>
+                </div>
+            </div>
+
+        <main id="principal">
+            <section class="vacantes" aria-label="Listado de vacantes">
+
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Auxiliar Administrativo</h2>
+                            <p class="empresa">Grupo Empresarial del Norte</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Monterrey, Nuevo León
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">Medio tiempo</span>
+                                <span>Presencial</span>
+                            </p>
+                            <p>Lunes a viernes - 09:00 a 14:00 hrs</p>
+                            <p><b>$8,500 MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
+
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Recepcionista</h2>
+                            <p class="empresa">Centro Médico San José</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                San Pedro Garza García, Nuevo León
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">Medio tiempo</span>
+                                <span>Presencial</span>
+                            </p>
+                            <p>Lunes a Viernes - 08:00 a 13:00 hrs</p>
+                            <p><b>$9,000 MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <aside class="aviso-telefono" aria-label="Medios de postulación">
+                        <p>La empresa acepta postulaciones por la plataforma o por teléfono.</p>
+                        <b>81 0000 0000</b>
+                    </aside>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
+
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Asistente de atención al Cliente</h2>
+                            <p class="empresa">Servicios Integrales Monterrey</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Santa Catarina, Nuevo León
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">Tiempo completo</span>
+                                <span>Híbrido</span>
+                            </p>
+                            <p>Lunes a Viernes - 09:00 a 17:00
+                            </p>
+                            <p><b>$12,000 MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <aside class="aviso-enviada" aria-label="Estado de la solicitud">
+                        <b>¡Solicitud enviada!</b>
+                        <p>Tu postulación quedó registrada en Mis solicitudes.</p>
+                    </aside>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-terciario" type="button">Mis solicitudes</button>
+                    </div>
+                </article>
+
+                <article class="vacante">
+                    <div>
+                        <header>
+                            <h2>Encargado de Inventario</h2>
+                            <p class="empresa">Distribuidora del Norte</p>
+                        </header>
+                        <div class="condiciones">
+                            <p class="ubicacion">
+                                <img src="img/ubicacion.png" alt="" width="22" height="22">
+                                Guadalupe, Nuevo León
+                            </p>
+                            <p class="jornada">
+                                <span class="etiqueta">Tiempo completo</span>
+                                <span>Presencial</span>
+                            </p>
+                            <p>Lunes a viernes - 08:00 a 16:00 hrs</p>
+                            <p><b>$11,500 MXN al mes</b></p>
+                        </div>
+                    </div>
+                    <div class="acciones-vacante">
+                        <a class="btn btn-terciario" href="vacantes.html">Ver más</a>
+                        <button class="btn btn-primario" type="button">Postulárme</button>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor pie-contenido">
+    
+            <section>
+                <h2 class="pie-titulo">AMAC</h2>
+                <p class="pie-texto">Asociación de Mayores A.C. Bolsa de trabajo para personas mayores: buscando un cambio cultural para el buen envejecimiento.</p>
+            </section>
+    
+            <nav aria-label="Secciones del pie de página">
+                <h2 class="pie-titulo">Secciones</h2>
+                <ul class="pie-lista">
+                    <li><a class="pie-enlace" href="index.html">Buscar empleos</a></li>
+                    <li><a class="pie-enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+                    <li><a class="pie-enlace" href="#">Mi perfil</a></li>
+                
+                </ul>
+            </nav>
+    
+            <section>
+                <h2 class="pie-titulo">¿Necesitas ayuda?</h2>
+                <p class="pie-texto">Llámanos y te ayudamos a usar la plataforma. Teléfono: 81 0000 0000</p>
+            </section>
+    
+            <p class="pie-legal"><small>© 2026 AMAC · Asociación de Mayores A.C.</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const menu = document.getElementById("menu");
+    
+        btn.addEventListener("click", function () {
+            menu.classList.toggle("abierto");
+        });
+    </script>
+</body>
+</html>
